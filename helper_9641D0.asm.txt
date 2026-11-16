@@ -1,0 +1,55 @@
+System.Void ScheduleOne.NPCs.Schedules.NPCAction::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+009641D0 mov [rsp+8],rbx
+009641D5 push rdi
+009641D6 sub rsp,40h
+009641DA cmp byte ptr [183BFD60Ch],0
+009641E1 mov edi,edx
+009641E3 mov rbx,rcx
+009641E6 jne short 0000000180964213h
+009641E8 lea rcx,[1839F9D68h]
+009641EF call 00000001803178A0h
+009641F4 lea rcx,[1839AF2F0h]
+009641FB call 00000001803178A0h
+00964200 lea rcx,[1839EA660h]
+00964207 call 00000001803178A0h
+0096420C mov byte ptr [183BFD60Ch],1
+00964213 xor edx,edx
+00964215 mov rcx,rbx
+00964218 call 0000000180964300h ; System.Boolean ScheduleOne.NPCs.Schedules.NPCAction::get_IsActive()
+0096421D test al,al
+0096421F je 00000001809642A9h
+00964225 test edi,edi
+00964227 je short 0000000180964235h
+00964229 mov dword ptr [rbx+140h],0
+00964233 jmp short 000000018096423Bh
+00964235 inc dword ptr [rbx+140h]
+0096423B mov rax,[rbx+130h]
+00964242 test rax,rax
+00964245 je short 00000001809642B4h
+00964247 cmp byte ptr [rax+22h],0
+0096424B je short 00000001809642A9h
+0096424D mov rax,[1839AF2F0h]
+00964254 lea rcx,[rsp+20h]
+00964259 xor edx,edx
+0096425B mov [rsp+20h],rax
+00964260 mov qword ptr [rsp+28h],0FFFFFFFFFFFFFFFFh
+00964269 mov [rsp+30h],edi
+0096426D call 0000000181BD9950h ; System.String System.Enum::ToString()
+00964272 mov rcx,[1839EA660h]
+00964279 xor r8d,r8d
+0096427C mov rdx,rax
+0096427F call 00000001819E3B20h ; System.String System.String::Concat(System.String,System.String)
+00964284 mov rcx,[1839F9D68h]
+0096428B mov rbx,rax
+0096428E cmp dword ptr [rcx+0E0h],0
+00964295 jne short 000000018096429Ch
+00964297 call 0000000180317C30h
+0096429C xor r8d,r8d
+0096429F xor edx,edx
+009642A1 mov rcx,rbx
+009642A4 call 00000001808A8BA0h ; System.Void ScheduleOne.Console::Log(System.Object,UnityEngine.Object)
+009642A9 mov rbx,[rsp+50h]
+009642AE add rsp,40h
+009642B2 pop rdi
+009642B3 ret
+009642B4 call 0000000180317B80h

@@ -1,0 +1,22 @@
+System.Void ScheduleOne.NPCs.Schedules.NPCSignal_UseATM::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+0096EE50 mov [rsp+8],rbx
+0096EE55 push rdi
+0096EE56 sub rsp,20h
+0096EE5A xor r8d,r8d
+0096EE5D mov edi,edx
+0096EE5F mov rbx,rcx
+0096EE62 call 00000001809641D0h ; System.Void ScheduleOne.NPCs.Schedules.NPCAction::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+0096EE67 xor edx,edx
+0096EE69 mov rcx,rbx
+0096EE6C call 0000000180964300h ; System.Boolean ScheduleOne.NPCs.Schedules.NPCAction::get_IsActive()
+0096EE71 test al,al
+0096EE73 je short 000000018096EE84h
+0096EE75 cmp edi,4
+0096EE78 jne short 000000018096EE84h
+0096EE7A xor edx,edx
+0096EE7C mov rcx,rbx
+0096EE7F call 000000018096E840h ; System.Void ScheduleOne.NPCs.Schedules.NPCSignal_UseATM::Purchase()
+0096EE84 mov rbx,[rsp+30h]
+0096EE89 add rsp,20h
+0096EE8D pop rdi
+0096EE8E ret

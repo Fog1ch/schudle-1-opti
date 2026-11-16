@@ -1,0 +1,36 @@
+System.Void ScheduleOne.NPCs.Other.SmokeCigarette::Begin()
+00989CE0 push rbx
+00989CE2 sub rsp,20h
+00989CE6 mov rbx,rcx
+00989CE9 xor ecx,ecx
+00989CEB call 0000000180CA5870h ; System.Boolean FishNet.InstanceFinder::get_IsServer()
+00989CF0 test al,al
+00989CF2 je short 0000000180989D4Ch
+00989CF4 mov rcx,[rbx+28h]
+00989CF8 test rcx,rcx
+00989CFB je short 0000000180989D52h
+00989CFD mov rdx,[rbx+20h]
+00989D01 xor r8d,r8d
+00989D04 call 00000001808CD6D0h ; ScheduleOne.Core.Equipping.Framework.IEquippedItemHandler ScheduleOne.NPCs.NPC::Equip_Networked(ScheduleOne.Core.Equipping.Framework.EquippableData)
+00989D09 lea rcx,[rbx+30h]
+00989D0D mov [rbx+30h],rax
+00989D11 mov rdx,rax
+00989D14 call 0000000180316AB0h
+00989D19 mov rax,[rbx+28h]
+00989D1D test rax,rax
+00989D20 je short 0000000180989D52h
+00989D22 mov rax,[rax+180h]
+00989D29 test rax,rax
+00989D2C je short 0000000180989D52h
+00989D2E mov rcx,[rax+58h]
+00989D32 test rcx,rcx
+00989D35 je short 0000000180989D52h
+00989D37 movss xmm1,[182E5D740h]
+00989D3F xor r8d,r8d
+00989D42 add rsp,20h
+00989D46 pop rbx
+00989D47 jmp 00000001807CD280h ; System.Void ScheduleOne.AvatarFramework.Animation.AvatarLookController::OverrideIKWeight(System.Single)
+00989D4C add rsp,20h
+00989D50 pop rbx
+00989D51 ret
+00989D52 call 0000000180317B80h

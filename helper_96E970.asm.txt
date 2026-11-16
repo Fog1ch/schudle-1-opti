@@ -1,0 +1,101 @@
+System.Void ScheduleOne.NPCs.Schedules.NPCSignal_UseATM::RpcLogic___Purchase_2166136261()
+0096E970 push rbx
+0096E972 sub rsp,40h
+0096E976 cmp byte ptr [183BFD62Ch],0
+0096E97D mov rbx,rcx
+0096E980 jne short 000000018096E995h
+0096E982 lea rcx,[1839E54E8h]
+0096E989 call 00000001803178A0h
+0096E98E mov byte ptr [183BFD62Ch],1
+0096E995 cmp qword ptr [rbx+158h],0
+0096E99D mov [rsp+50h],rsi
+0096E9A2 mov [rsp+58h],rdi
+0096E9A7 je short 000000018096EA03h
+0096E9A9 mov rax,[1839E54E8h]
+0096E9B0 mov rax,[rax+20h]
+0096E9B4 test byte ptr [rax+135h],1
+0096E9BB jne short 000000018096E9C5h
+0096E9BD mov rcx,rax
+0096E9C0 call 000000018031C840h
+0096E9C5 mov rax,[rax+0C0h]
+0096E9CC mov rax,[rax+10h]
+0096E9D0 test byte ptr [rax+135h],1
+0096E9D7 jne short 000000018096E9E1h
+0096E9D9 mov rcx,rax
+0096E9DC call 000000018031C840h
+0096E9E1 mov rax,[rax+0B8h]
+0096E9E8 mov rcx,[rax]
+0096E9EB test rcx,rcx
+0096E9EE je 000000018096EB3Fh
+0096E9F4 mov rdx,[rbx+158h]
+0096E9FB xor r8d,r8d
+0096E9FE call 0000000182B79C80h ; System.Void UnityEngine.MonoBehaviour::StopCoroutine(UnityEngine.Coroutine)
+0096EA03 mov rcx,[rbx+128h]
+0096EA0A test rcx,rcx
+0096EA0D je 000000018096EB3Fh
+0096EA13 mov rax,[rbx+150h]
+0096EA1A test rax,rax
+0096EA1D je 000000018096EB3Fh
+0096EA23 mov rdx,[rax+140h]
+0096EA2A test rdx,rdx
+0096EA2D je 000000018096EB3Fh
+0096EA33 mov rdi,[rcx+170h]
+0096EA3A xor r8d,r8d
+0096EA3D lea rcx,[rsp+30h]
+0096EA42 call 0000000182B877A0h ; UnityEngine.Vector3 UnityEngine.Transform::get_forward()
+0096EA47 test rdi,rdi
+0096EA4A je 000000018096EB3Fh
+0096EA50 movsd xmm0,[rax]
+0096EA54 lea rdx,[rsp+20h]
+0096EA59 mov eax,[rax+8]
+0096EA5C xor r9d,r9d
+0096EA5F movss xmm2,[182E5CB40h]
+0096EA67 mov rcx,rdi
+0096EA6A movsd [rsp+20h],xmm0
+0096EA70 mov [rsp+28h],eax
+0096EA74 call 00000001808F45C0h ; System.Void ScheduleOne.NPCs.NPCMovement::FaceDirection(UnityEngine.Vector3,System.Single)
+0096EA79 mov rax,[1839E54E8h]
+0096EA80 mov rax,[rax+20h]
+0096EA84 test byte ptr [rax+135h],1
+0096EA8B jne short 000000018096EA95h
+0096EA8D mov rcx,rax
+0096EA90 call 000000018031C840h
+0096EA95 mov rax,[rax+0C0h]
+0096EA9C mov rax,[rax+10h]
+0096EAA0 test byte ptr [rax+135h],1
+0096EAA7 jne short 000000018096EAB1h
+0096EAA9 mov rcx,rax
+0096EAAC call 000000018031C840h
+0096EAB1 cmp byte ptr [183BFD629h],0
+0096EAB8 mov rax,[rax+0B8h]
+0096EABF mov rsi,[rax]
+0096EAC2 jne short 000000018096EAD7h
+0096EAC4 lea rcx,[1839AFB60h]
+0096EACB call 00000001803178A0h
+0096EAD0 mov byte ptr [183BFD629h],1
+0096EAD7 mov rcx,[1839AFB60h]
+0096EADE call 0000000180317B20h
+0096EAE3 xor edx,edx
+0096EAE5 mov rcx,rax
+0096EAE8 mov rdi,rax
+0096EAEB call 000000018043FEC0h ; System.Void URPOutlineFeature::Create() | System.Void ToolBuddy.ThirdParty.VectorGraphics.VectorUtils/<SegmentsInPath>d__75::System.IDisposable.Dispose() | System.Void ToolBuddy.ThirdParty.VectorGraphics.PathDistanceForwardIterator/BezierLoop::Clear() | System.Void FluffyUnderware.DevTools.Pool`1::setParent(T,UnityEngine.Transform) | System.Void FluffyUnderware.DevTools.Pool`1::destroy(T) | System.Void FluffyUnderware.DevTools.ComponentPool::OnSceneLoaded(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode) | System.Void FluffyUnderware.DevTools.ComponentPool::OnBeforeSerialize() | System.Void FluffyUnderware.DevTools.DTSingleton`1::MergeDoubleLoaded(FluffyUnderware.DevTools.IDTSingleton)
+0096EAF0 lea rcx,[rdi+20h]
+0096EAF4 mov dword ptr [rdi+10h],0
+0096EAFB mov rdx,rbx
+0096EAFE mov [rdi+20h],rbx
+0096EB02 call 0000000180316AB0h
+0096EB07 test rsi,rsi
+0096EB0A je short 000000018096EB3Fh
+0096EB0C xor r8d,r8d
+0096EB0F mov rdx,rdi
+0096EB12 mov rcx,rsi
+0096EB15 call 0000000182B79810h ; UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator) | UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine_Auto(System.Collections.IEnumerator)
+0096EB1A lea rcx,[rbx+158h]
+0096EB21 mov [rbx+158h],rax
+0096EB28 mov rdx,rax
+0096EB2B mov rdi,[rsp+58h]
+0096EB30 mov rsi,[rsp+50h]
+0096EB35 add rsp,40h
+0096EB39 pop rbx
+0096EB3A jmp 0000000180316AB0h
+0096EB3F call 0000000180317B80h

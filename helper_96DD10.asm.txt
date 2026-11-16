@@ -1,0 +1,34 @@
+System.Void ScheduleOne.NPCs.Schedules.NPCSignal_DriveToCarPark::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+0096DD10 mov [rsp+8],rbx
+0096DD15 push rdi
+0096DD16 sub rsp,20h
+0096DD1A xor r8d,r8d
+0096DD1D mov ebx,edx
+0096DD1F mov rdi,rcx
+0096DD22 call 00000001809641D0h ; System.Void ScheduleOne.NPCs.Schedules.NPCAction::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+0096DD27 xor edx,edx
+0096DD29 mov rcx,rdi
+0096DD2C call 0000000180964300h ; System.Boolean ScheduleOne.NPCs.Schedules.NPCAction::get_IsActive()
+0096DD31 test al,al
+0096DD33 je short 000000018096DD6Fh
+0096DD35 xor ecx,ecx
+0096DD37 call 0000000180CA5870h ; System.Boolean FishNet.InstanceFinder::get_IsServer()
+0096DD3C test al,al
+0096DD3E je short 000000018096DD6Fh
+0096DD40 cmp ebx,4
+0096DD43 je short 000000018096DD4Ah
+0096DD45 cmp ebx,3
+0096DD48 jne short 000000018096DD6Fh
+0096DD4A mov rcx,[rdi+128h]
+0096DD51 test rcx,rcx
+0096DD54 je short 000000018096DD7Ah
+0096DD56 mov rax,[rcx]
+0096DD59 xor edx,edx
+0096DD5B mov r8,[rdi+158h]
+0096DD62 mov r9,[rax+7A0h]
+0096DD69 call qword ptr [rax+798h]
+0096DD6F mov rbx,[rsp+30h]
+0096DD74 add rsp,20h
+0096DD78 pop rdi
+0096DD79 ret
+0096DD7A call 0000000180317B80h

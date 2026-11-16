@@ -1,0 +1,217 @@
+[
+  {
+    "path": "callback-metadata.json",
+    "bytes": 399486,
+    "sha256": "1c1247dcb09bc6a22ec12db146daa97d65e2029190b9b1dfa624f06f15422b88"
+  },
+  {
+    "path": "extract_remaining.py",
+    "bytes": 1618,
+    "sha256": "91f1a134b4855b995702aa8d63052d4f3e10dd35c97e80f7b4cfeac72b4b6483"
+  },
+  {
+    "path": "FOLLOWUP_AB.md",
+    "bytes": 12740,
+    "sha256": "a3ef95dc338d6d26928a9220f64e578f2662f2155975b1f372074309d468f3ec"
+  },
+  {
+    "path": "inspect_metadata.py",
+    "bytes": 1266,
+    "sha256": "6153bb427b75253a41fc14f45fea4e7d292afe11ad63bc10d43c5bf4da8456b6"
+  },
+  {
+    "path": "inspect_remaining.py",
+    "bytes": 1905,
+    "sha256": "e346dd04b8aa873df1497e0cbce499d2c36f9325b9203d06c02c74120052338d"
+  },
+  {
+    "path": "integrity-check.json",
+    "bytes": 533,
+    "sha256": "c226429eba70f49960521e0fadcd12d155fbff95d794d619685b2d37d9dec61c"
+  },
+  {
+    "path": "path-api-sites.json",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "path": "path-field-sites.json",
+    "bytes": 861,
+    "sha256": "fbeec5731ca6d53f91252aa95c0928adb2c35dc569e00c270abdc94e9bd59c17"
+  },
+  {
+    "path": "range-discovery.json",
+    "bytes": 6172,
+    "sha256": "20c96ff8dcd09f859115b31ec4fc00fc46088275ed8721decdcdbb26d9d46aaa"
+  },
+  {
+    "path": "verify_followup.py",
+    "bytes": 1552,
+    "sha256": "1e64005f06fccebd13c01e49a1f2adb4421e98c96ca33105fe74fb866688c303"
+  },
+  {
+    "path": "evidence\\helper_2B1E9B0.asm.txt",
+    "bytes": 509,
+    "sha256": "f24a7b3eae8aa574f502ab0bd76d27cbcb7302c99b4dc91d62b5e8dc75495c9c"
+  },
+  {
+    "path": "evidence\\helper_2B1EC30.asm.txt",
+    "bytes": 509,
+    "sha256": "6d422b177e5e5925a82020e50f25e5316a3a8bc4cab84950baf22db5a17c6218"
+  },
+  {
+    "path": "evidence\\helper_2B20A20.asm.txt",
+    "bytes": 394,
+    "sha256": "0fe2058fa73a78dd22233ea4f2987cf6d4792882c97d6c6a5c87419b5585c3f7"
+  },
+  {
+    "path": "evidence\\helper_2B20A60.asm.txt",
+    "bytes": 505,
+    "sha256": "93243d2ef66f277c1429891510ab7bd548e0eae744d071434647e11f2c506606"
+  },
+  {
+    "path": "evidence\\helper_2B20AB0.asm.txt",
+    "bytes": 405,
+    "sha256": "9b36d113cc19d3f91776f5f82d7b5cbcc503b44856786196bb338b74171ec393"
+  },
+  {
+    "path": "evidence\\helper_6D7B40.asm.txt",
+    "bytes": 767,
+    "sha256": "325844793c949ce8570c86e0ed873d0fb36b43de4f42eedec2e11f2967157a2c"
+  },
+  {
+    "path": "evidence\\helper_925460.asm.txt",
+    "bytes": 3629,
+    "sha256": "d6d30dbdc33ff1bcdad5250ad42803bf40441845e1b5cb87e09fe44d63c1e5a8"
+  },
+  {
+    "path": "evidence\\helper_959E10.asm.txt",
+    "bytes": 4034,
+    "sha256": "42ba61e1032fa115d331ad9c2a63f08db4bbc57deb1556c468fbe7b25c57119e"
+  },
+  {
+    "path": "evidence\\helper_95AB50.asm.txt",
+    "bytes": 684,
+    "sha256": "0486c5587866cb3146d0ffe938edc4b9eb10dbeb2614c8d628a7a45d4d69072c"
+  },
+  {
+    "path": "evidence\\helper_961E10.asm.txt",
+    "bytes": 219,
+    "sha256": "95606cf1f8dfea7563b7f80c38d0b49148d997dd8d12db0c18e51fc10e339da6"
+  },
+  {
+    "path": "evidence\\helper_9628D0.asm.txt",
+    "bytes": 4122,
+    "sha256": "c13c7f630b0b22768ad0ba9422de5926caf5fcb62f5d52ace37a9cfbb69d3229"
+  },
+  {
+    "path": "evidence\\helper_962AD0.asm.txt",
+    "bytes": 3355,
+    "sha256": "6a7a3d29c8a58ab947a1d40beb250189eb9371455c0fe9dd5b9298f0d725edb8"
+  },
+  {
+    "path": "evidence\\helper_9641D0.asm.txt",
+    "bytes": 1938,
+    "sha256": "b420447f962dece5fac7d72c0026c3e7fb0ba88ed09a36e55ae865757c2d859f"
+  },
+  {
+    "path": "evidence\\helper_9668E0.asm.txt",
+    "bytes": 1677,
+    "sha256": "6274f7b7930a428dc0af1434b60be963fd669fbc494f9ec1f93c9a74a66ed9b7"
+  },
+  {
+    "path": "evidence\\helper_968180.asm.txt",
+    "bytes": 1042,
+    "sha256": "bfba93b3e614f2bf04e13f5ed6b3a6542c4ff4f038ce084458db3251decfdf96"
+  },
+  {
+    "path": "evidence\\helper_96B7D0.asm.txt",
+    "bytes": 1811,
+    "sha256": "8f883684f43442d79276ab351b250d41ee4ae5af86bf76f517a93c58c5914c3f"
+  },
+  {
+    "path": "evidence\\helper_96C660.asm.txt",
+    "bytes": 2680,
+    "sha256": "3a960da9063c669acf41e7a90003e146b31ac649f8157222fff6a53545957a98"
+  },
+  {
+    "path": "evidence\\helper_96C800.asm.txt",
+    "bytes": 2730,
+    "sha256": "a9600111e70985d20447138fab51ae181936cb25c9abe8b9fba9ada64eabcb58"
+  },
+  {
+    "path": "evidence\\helper_96CBF0.asm.txt",
+    "bytes": 1126,
+    "sha256": "a69d652598784b69121018c8d74b9b616abae0af3945242ad13d48f30d2926e9"
+  },
+  {
+    "path": "evidence\\helper_96DD10.asm.txt",
+    "bytes": 1223,
+    "sha256": "b82728dfe3ad5a7beb4ecf15e4d09e4cbde9ef395ed3df8400dccf120a1a7a50"
+  },
+  {
+    "path": "evidence\\helper_96E840.asm.txt",
+    "bytes": 2646,
+    "sha256": "473be1554f692db3889fec04e61969d28bdec99d54e3c332db807ab35780e188"
+  },
+  {
+    "path": "evidence\\helper_96E970.asm.txt",
+    "bytes": 4167,
+    "sha256": "7620ba528e729e22f5d28d8cfee8bcf060978f3010db58dfa8f70051437a8418"
+  },
+  {
+    "path": "evidence\\helper_96EE50.asm.txt",
+    "bytes": 876,
+    "sha256": "74904ec431a2f1512572e7ed14f03fa8dbc60efb7ef45cfd7c1170a8557d249e"
+  },
+  {
+    "path": "evidence\\helper_96FCE0.asm.txt",
+    "bytes": 2668,
+    "sha256": "0a3330bc7ae7201244c71250b7b3fc80c23db199a6b3060a9fc04523b703cdff"
+  },
+  {
+    "path": "evidence\\helper_96FE00.asm.txt",
+    "bytes": 5378,
+    "sha256": "ed9847ced1ea668dc9fb768cd84bced4d22eaba860de8a8009075902c524395f"
+  },
+  {
+    "path": "evidence\\helper_970370.asm.txt",
+    "bytes": 898,
+    "sha256": "92d889f6ec0219c44320b16b24f6293c3297871e942348ae5c840d9cc859f17a"
+  },
+  {
+    "path": "evidence\\helper_970BE0.asm.txt",
+    "bytes": 3717,
+    "sha256": "89e70e13b91451b1ec589ec10c15c76fbbbb896792d45bb00de56db628327038"
+  },
+  {
+    "path": "evidence\\helper_989CE0.asm.txt",
+    "bytes": 1311,
+    "sha256": "505ea7aa20a1ffc7ca292af855860d69f3929014792ca045657674c91bc2d464"
+  },
+  {
+    "path": "evidence\\methods-all.json",
+    "bytes": 47122454,
+    "sha256": "d5a5098f56f0b5802ccec5392155ab598ed0d81f90d925995620939a7db219fc"
+  },
+  {
+    "path": "evidence\\npc-fields.json",
+    "bytes": 31563,
+    "sha256": "44ec02eaa70892108f9f4fca8f595e3215d7b54321c2b8a2c790951f9b060260"
+  },
+  {
+    "path": "evidence\\npc-methods.json",
+    "bytes": 31957,
+    "sha256": "f2d9061d75e276b13d617303657ce5bbaf569f87a624ae9941efea0836236f3c"
+  },
+  {
+    "path": "metadata-reader\\Program.cs",
+    "bytes": 1904,
+    "sha256": "ea0e29372675b69e877653082303e9de3b3bde6fb1a4780638222c9cd930a3ec"
+  },
+  {
+    "path": "metadata-reader\\Reader.csproj",
+    "bytes": 315,
+    "sha256": "3fbce17f796ef6d133776bcc5158fab7107011da8712ddab788380709afca76a"
+  }
+]

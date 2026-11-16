@@ -1,0 +1,28 @@
+System.Void ScheduleOne.NPCs.Schedules.NPCEvent_LocationBasedAction::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+00968180 mov [rsp+8],rbx
+00968185 push rdi
+00968186 sub rsp,20h
+0096818A xor r8d,r8d
+0096818D mov edi,edx
+0096818F mov rbx,rcx
+00968192 call 00000001809641D0h ; System.Void ScheduleOne.NPCs.Schedules.NPCAction::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+00968197 xor edx,edx
+00968199 mov rcx,rbx
+0096819C call 0000000180964300h ; System.Boolean ScheduleOne.NPCs.Schedules.NPCAction::get_IsActive()
+009681A1 test al,al
+009681A3 je short 00000001809681CAh
+009681A5 cmp edi,4
+009681A8 jne short 00000001809681CAh
+009681AA xor ecx,ecx
+009681AC call 0000000180CA5870h ; System.Boolean FishNet.InstanceFinder::get_IsServer()
+009681B1 test al,al
+009681B3 je short 00000001809681CAh
+009681B5 mov rax,[rbx]
+009681B8 xor edx,edx
+009681BA mov rcx,rbx
+009681BD mov r8,[rax+410h]
+009681C4 call qword ptr [rax+408h]
+009681CA mov rbx,[rsp+30h]
+009681CF add rsp,20h
+009681D3 pop rdi
+009681D4 ret

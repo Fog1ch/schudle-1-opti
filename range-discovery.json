@@ -1,0 +1,167 @@
+{
+  "existing": {},
+  "requested": [
+    {
+      "Assembly": "Assembly-CSharp",
+      "Type": "ScheduleOne.Employees.Employee",
+      "Name": "WalkCallback",
+      "Signature": "System.Void ScheduleOne.Employees.Employee::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)",
+      "RVA": 7174976,
+      "Offset": 7171392,
+      "Length": 80
+    },
+    {
+      "Assembly": "Assembly-CSharp",
+      "Type": "ScheduleOne.NPCs.Behaviour.CustomerAttendDealBehaviour",
+      "Name": "WalkCallback",
+      "Signature": "System.Void ScheduleOne.NPCs.Behaviour.CustomerAttendDealBehaviour::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)",
+      "RVA": 9589856,
+      "Offset": 9586272,
+      "Length": 501
+    },
+    {
+      "Assembly": "Assembly-CSharp",
+      "Type": "ScheduleOne.NPCs.Behaviour.SmokeBreakBehaviour",
+      "Name": "WalkCallback",
+      "Signature": "System.Void ScheduleOne.NPCs.Behaviour.SmokeBreakBehaviour::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)",
+      "RVA": 9808720,
+      "Offset": 9805136,
+      "Length": 49
+    },
+    {
+      "Assembly": "Assembly-CSharp",
+      "Type": "ScheduleOne.NPCs.Behaviour.MoveToAndActBehaviour",
+      "Name": "WalkCallback",
+      "Signature": "System.Void ScheduleOne.NPCs.Behaviour.MoveToAndActBehaviour::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)",
+      "RVA": 9841360,
+      "Offset": 9837776,
+      "Length": 421
+    },
+    {
+      "Assembly": "Assembly-CSharp",
+      "Type": "ScheduleOne.NPCs.Schedules.NPCEvent_Conversate",
+      "Name": "WalkCallback",
+      "Signature": "System.Void ScheduleOne.NPCs.Schedules.NPCEvent_Conversate::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)",
+      "RVA": 9857248,
+      "Offset": 9853664,
+      "Length": 154
+    },
+    {
+      "Assembly": "Assembly-CSharp",
+      "Type": "ScheduleOne.NPCs.Schedules.NPCEvent_LocationDialogue",
+      "Name": "WalkCallback",
+      "Signature": "System.Void ScheduleOne.NPCs.Schedules.NPCEvent_LocationDialogue::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)",
+      "RVA": 9863552,
+      "Offset": 9859968,
+      "Length": 85
+    },
+    {
+      "Assembly": "Assembly-CSharp",
+      "Type": "ScheduleOne.NPCs.Schedules.NPCEvent_Sit",
+      "Name": "WalkCallback",
+      "Signature": "System.Void ScheduleOne.NPCs.Schedules.NPCEvent_Sit::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)",
+      "RVA": 9877456,
+      "Offset": 9873872,
+      "Length": 175
+    },
+    {
+      "Assembly": "Assembly-CSharp",
+      "Type": "ScheduleOne.NPCs.Schedules.NPCEvent_StayInBuilding",
+      "Name": "WalkCallback",
+      "Signature": "System.Void ScheduleOne.NPCs.Schedules.NPCEvent_StayInBuilding::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)",
+      "RVA": 9882608,
+      "Offset": 9879024,
+      "Length": 79
+    },
+    {
+      "Assembly": "Assembly-CSharp",
+      "Type": "ScheduleOne.NPCs.Schedules.NPCAction",
+      "Name": "WalkCallback",
+      "Signature": "System.Void ScheduleOne.NPCs.Schedules.NPCAction::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)",
+      "RVA": 9847248,
+      "Offset": 9843664,
+      "Length": 233
+    },
+    {
+      "Assembly": "Assembly-CSharp",
+      "Type": "ScheduleOne.NPCs.Schedules.NPCSignal_DriveToCarPark",
+      "Name": "WalkCallback",
+      "Signature": "System.Void ScheduleOne.NPCs.Schedules.NPCSignal_DriveToCarPark::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)",
+      "RVA": 9886992,
+      "Offset": 9883408,
+      "Length": 111
+    },
+    {
+      "Assembly": "Assembly-CSharp",
+      "Type": "ScheduleOne.NPCs.Schedules.NPCSignal_UseATM",
+      "Name": "WalkCallback",
+      "Signature": "System.Void ScheduleOne.NPCs.Schedules.NPCSignal_UseATM::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)",
+      "RVA": 9891408,
+      "Offset": 9887824,
+      "Length": 63
+    },
+    {
+      "Assembly": "Assembly-CSharp",
+      "Type": "ScheduleOne.NPCs.Schedules.NPCSignal_UseVendingMachine",
+      "Name": "WalkCallback",
+      "Signature": "System.Void ScheduleOne.NPCs.Schedules.NPCSignal_UseVendingMachine::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)",
+      "RVA": 9896816,
+      "Offset": 9893232,
+      "Length": 63
+    },
+    {
+      "Assembly": "Assembly-CSharp",
+      "Type": "ScheduleOne.NPCs.Schedules.NPCSignal_WalkToLocation",
+      "Name": "WalkCallback",
+      "Signature": "System.Void ScheduleOne.NPCs.Schedules.NPCSignal_WalkToLocation::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)",
+      "RVA": 9898976,
+      "Offset": 9895392,
+      "Length": 414
+    },
+    {
+      "Assembly": "UnityEngine.AIModule",
+      "Type": "UnityEngine.AI.NavMeshAgent",
+      "Name": "SetPath",
+      "Signature": "System.Boolean UnityEngine.AI.NavMeshAgent::SetPath(UnityEngine.AI.NavMeshPath)",
+      "RVA": 45214768,
+      "Offset": 45211184,
+      "Length": 66
+    },
+    {
+      "Assembly": "UnityEngine.AIModule",
+      "Type": "UnityEngine.AI.NavMeshAgent",
+      "Name": "CopyPathTo",
+      "Signature": "System.Void UnityEngine.AI.NavMeshAgent::CopyPathTo(UnityEngine.AI.NavMeshPath)",
+      "RVA": 45214128,
+      "Offset": 45210544,
+      "Length": 66
+    },
+    {
+      "Assembly": "UnityEngine.AIModule",
+      "Type": "UnityEngine.AI.NavMeshPath",
+      "Name": "DestroyNavMeshPath",
+      "Signature": "System.Void UnityEngine.AI.NavMeshPath::DestroyNavMeshPath(System.IntPtr)",
+      "RVA": 45222576,
+      "Offset": 45218992,
+      "Length": 51
+    },
+    {
+      "Assembly": "UnityEngine.AIModule",
+      "Type": "UnityEngine.AI.NavMeshPath",
+      "Name": "ClearCornersInternal",
+      "Signature": "System.Void UnityEngine.AI.NavMeshPath::ClearCornersInternal()",
+      "RVA": 45222432,
+      "Offset": 45218848,
+      "Length": 51
+    },
+    {
+      "Assembly": "UnityEngine.AIModule",
+      "Type": "UnityEngine.AI.NavMeshPath",
+      "Name": "ClearCorners",
+      "Signature": "System.Void UnityEngine.AI.NavMeshPath::ClearCorners()",
+      "RVA": 45222496,
+      "Offset": 45218912,
+      "Length": 69
+    }
+  ]
+}

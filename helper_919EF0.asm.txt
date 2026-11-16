@@ -1,0 +1,52 @@
+System.Void ScheduleOne.NPCs.Behaviour.Behaviour::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+00919EF0 mov [rsp+8],rbx
+00919EF5 push rdi
+00919EF6 sub rsp,40h
+00919EFA cmp byte ptr [183BFD361h],0
+00919F01 mov edi,edx
+00919F03 mov rbx,rcx
+00919F06 jne short 0000000180919F33h
+00919F08 lea rcx,[1839F9D68h]
+00919F0F call 00000001803178A0h
+00919F14 lea rcx,[1839AF2F0h]
+00919F1B call 00000001803178A0h
+00919F20 lea rcx,[1839EA660h]
+00919F27 call 00000001803178A0h
+00919F2C mov byte ptr [183BFD361h],1
+00919F33 cmp byte ptr [rbx+132h],0
+00919F3A je 0000000180919FC7h
+00919F40 test edi,edi
+00919F42 je short 0000000180919F50h
+00919F44 mov dword ptr [rbx+168h],0
+00919F4E jmp short 0000000180919F56h
+00919F50 inc dword ptr [rbx+168h]
+00919F56 mov rax,[rbx+138h]
+00919F5D test rax,rax
+00919F60 je short 0000000180919FD2h
+00919F62 cmp byte ptr [rax+118h],0
+00919F69 je short 0000000180919FC7h
+00919F6B mov rax,[1839AF2F0h]
+00919F72 lea rcx,[rsp+20h]
+00919F77 xor edx,edx
+00919F79 mov [rsp+20h],rax
+00919F7E mov qword ptr [rsp+28h],0FFFFFFFFFFFFFFFFh
+00919F87 mov [rsp+30h],edi
+00919F8B call 0000000181BD9950h ; System.String System.Enum::ToString()
+00919F90 mov rcx,[1839EA660h]
+00919F97 xor r8d,r8d
+00919F9A mov rdx,rax
+00919F9D call 00000001819E3B20h ; System.String System.String::Concat(System.String,System.String)
+00919FA2 mov rcx,[1839F9D68h]
+00919FA9 mov rbx,rax
+00919FAC cmp dword ptr [rcx+0E0h],0
+00919FB3 jne short 0000000180919FBAh
+00919FB5 call 0000000180317C30h
+00919FBA xor r8d,r8d
+00919FBD xor edx,edx
+00919FBF mov rcx,rbx
+00919FC2 call 00000001808A8BA0h ; System.Void ScheduleOne.Console::Log(System.Object,UnityEngine.Object)
+00919FC7 mov rbx,[rsp+50h]
+00919FCC add rsp,40h
+00919FD0 pop rdi
+00919FD1 ret
+00919FD2 call 0000000180317B80h

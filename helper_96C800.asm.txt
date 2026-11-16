@@ -1,0 +1,59 @@
+System.Void ScheduleOne.NPCs.Schedules.NPCEvent_StayInBuilding::RpcLogic___PlayEnterAnimation_2166136261()
+0096C800 push rbx
+0096C802 sub rsp,20h
+0096C806 cmp byte ptr [183BFD5F9h],0
+0096C80D mov rbx,rcx
+0096C810 jne short 000000018096C825h
+0096C812 lea rcx,[1839E54E8h]
+0096C819 call 00000001803178A0h
+0096C81E mov byte ptr [183BFD5F9h],1
+0096C825 cmp byte ptr [rbx+168h],0
+0096C82C jne 000000018096C8FDh
+0096C832 mov [rsp+30h],rsi
+0096C837 mov [rsp+38h],rdi
+0096C83C mov rax,[1839E54E8h]
+0096C843 mov rax,[rax+20h]
+0096C847 test byte ptr [rax+135h],1
+0096C84E jne short 000000018096C858h
+0096C850 mov rcx,rax
+0096C853 call 000000018031C840h
+0096C858 mov rax,[rax+0C0h]
+0096C85F mov rax,[rax+10h]
+0096C863 test byte ptr [rax+135h],1
+0096C86A jne short 000000018096C874h
+0096C86C mov rcx,rax
+0096C86F call 000000018031C840h
+0096C874 cmp byte ptr [183BFD5F6h],0
+0096C87B mov rax,[rax+0B8h]
+0096C882 mov rsi,[rax]
+0096C885 jne short 000000018096C89Ah
+0096C887 lea rcx,[1839AE8D0h]
+0096C88E call 00000001803178A0h
+0096C893 mov byte ptr [183BFD5F6h],1
+0096C89A mov rcx,[1839AE8D0h]
+0096C8A1 call 0000000180317B20h
+0096C8A6 xor edx,edx
+0096C8A8 mov rcx,rax
+0096C8AB mov rdi,rax
+0096C8AE call 000000018043FEC0h ; System.Void URPOutlineFeature::Create() | System.Void ToolBuddy.ThirdParty.VectorGraphics.VectorUtils/<SegmentsInPath>d__75::System.IDisposable.Dispose() | System.Void ToolBuddy.ThirdParty.VectorGraphics.PathDistanceForwardIterator/BezierLoop::Clear() | System.Void FluffyUnderware.DevTools.Pool`1::setParent(T,UnityEngine.Transform) | System.Void FluffyUnderware.DevTools.Pool`1::destroy(T) | System.Void FluffyUnderware.DevTools.ComponentPool::OnSceneLoaded(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode) | System.Void FluffyUnderware.DevTools.ComponentPool::OnBeforeSerialize() | System.Void FluffyUnderware.DevTools.DTSingleton`1::MergeDoubleLoaded(FluffyUnderware.DevTools.IDTSingleton)
+0096C8B3 lea rcx,[rdi+20h]
+0096C8B7 mov dword ptr [rdi+10h],0
+0096C8BE mov rdx,rbx
+0096C8C1 mov [rdi+20h],rbx
+0096C8C5 call 0000000180316AB0h
+0096C8CA test rsi,rsi
+0096C8CD je short 000000018096C903h
+0096C8CF xor r8d,r8d
+0096C8D2 mov rdx,rdi
+0096C8D5 mov rcx,rsi
+0096C8D8 call 0000000182B79810h ; UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator) | UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine_Auto(System.Collections.IEnumerator)
+0096C8DD lea rcx,[rbx+170h]
+0096C8E4 mov [rbx+170h],rax
+0096C8EB mov rdx,rax
+0096C8EE call 0000000180316AB0h
+0096C8F3 mov rsi,[rsp+30h]
+0096C8F8 mov rdi,[rsp+38h]
+0096C8FD add rsp,20h
+0096C901 pop rbx
+0096C902 ret
+0096C903 call 0000000180317B80h

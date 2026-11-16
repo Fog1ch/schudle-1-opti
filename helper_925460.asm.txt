@@ -1,0 +1,108 @@
+System.Void ScheduleOne.NPCs.Behaviour.CustomerAttendDealBehaviour::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+00925460 mov [rsp+10h],rbx
+00925465 push rdi
+00925466 sub rsp,50h
+0092546A cmp byte ptr [183BFD3B5h],0
+00925471 mov edi,edx
+00925473 mov rbx,rcx
+00925476 jne short 000000018092548Bh
+00925478 lea rcx,[18398E710h]
+0092547F call 00000001803178A0h
+00925484 mov byte ptr [183BFD3B5h],1
+0092548B cmp byte ptr [183BFD361h],0
+00925492 jne short 00000001809254BFh
+00925494 lea rcx,[1839F9D68h]
+0092549B call 00000001803178A0h
+009254A0 lea rcx,[1839AF2F0h]
+009254A7 call 00000001803178A0h
+009254AC lea rcx,[1839EA660h]
+009254B3 call 00000001803178A0h
+009254B8 mov byte ptr [183BFD361h],1
+009254BF cmp byte ptr [rbx+132h],0
+009254C6 je 0000000180925645h
+009254CC test edi,edi
+009254CE je short 00000001809254DCh
+009254D0 mov dword ptr [rbx+168h],0
+009254DA jmp short 00000001809254E2h
+009254DC inc dword ptr [rbx+168h]
+009254E2 mov rax,[rbx+138h]
+009254E9 test rax,rax
+009254EC je 0000000180925650h
+009254F2 cmp byte ptr [rax+118h],0
+009254F9 je short 0000000180925561h
+009254FB mov rax,[1839AF2F0h]
+00925502 lea rcx,[rsp+30h]
+00925507 xor edx,edx
+00925509 mov [rsp+30h],rax
+0092550E mov [rsp+60h],rsi
+00925513 mov qword ptr [rsp+38h],0FFFFFFFFFFFFFFFFh
+0092551C mov [rsp+40h],edi
+00925520 call 0000000181BD9950h ; System.String System.Enum::ToString()
+00925525 mov rcx,[1839EA660h]
+0092552C xor r8d,r8d
+0092552F mov rdx,rax
+00925532 call 00000001819E3B20h ; System.String System.String::Concat(System.String,System.String)
+00925537 mov rcx,[1839F9D68h]
+0092553E mov rsi,rax
+00925541 cmp dword ptr [rcx+0E0h],0
+00925548 jne short 000000018092554Fh
+0092554A call 0000000180317C30h
+0092554F xor r8d,r8d
+00925552 xor edx,edx
+00925554 mov rcx,rsi
+00925557 call 00000001808A8BA0h ; System.Void ScheduleOne.Console::Log(System.Object,UnityEngine.Object)
+0092555C mov rsi,[rsp+60h]
+00925561 cmp byte ptr [rbx+132h],0
+00925568 je 0000000180925645h
+0092556E cmp edi,4
+00925571 jne 0000000180925645h
+00925577 mov rax,[rbx+138h]
+0092557E test rax,rax
+00925581 je 0000000180925650h
+00925587 mov r8,[rax+1A8h]
+0092558E test r8,r8
+00925591 je 0000000180925650h
+00925597 mov rax,[rbx+170h]
+0092559E test rax,rax
+009255A1 je 0000000180925650h
+009255A7 mov rcx,[rax+150h]
+009255AE test rcx,rcx
+009255B1 je 0000000180925650h
+009255B7 mov rdx,[rcx+30h]
+009255BB test rdx,rdx
+009255BE je 0000000180925650h
+009255C4 mov rdi,[r8+170h]
+009255CB lea rcx,[rsp+30h]
+009255D0 xor r8d,r8d
+009255D3 call 0000000182B877A0h ; UnityEngine.Vector3 UnityEngine.Transform::get_forward()
+009255D8 test rdi,rdi
+009255DB je short 0000000180925650h
+009255DD movsd xmm0,[rax]
+009255E1 lea rdx,[rsp+20h]
+009255E6 mov eax,[rax+8]
+009255E9 xor r9d,r9d
+009255EC movss xmm2,[182E5CB40h]
+009255F4 mov rcx,rdi
+009255F7 movsd [rsp+20h],xmm0
+009255FD mov [rsp+28h],eax
+00925601 call 00000001808F45C0h ; System.Void ScheduleOne.NPCs.NPCMovement::FaceDirection(UnityEngine.Vector3,System.Single)
+00925606 mov rcx,[rbx+138h]
+0092560D test rcx,rcx
+00925610 je short 0000000180925650h
+00925612 mov rcx,[rcx+1A8h]
+00925619 test rcx,rcx
+0092561C je short 0000000180925650h
+0092561E mov rdx,[18398E710h]
+00925625 call 0000000180DF66F0h ; T UnityEngine.Component::GetComponent()
+0092562A test rax,rax
+0092562D je short 0000000180925650h
+0092562F mov r9,[rax]
+00925632 mov dl,1
+00925634 mov rcx,rax
+00925637 mov r8,[r9+500h]
+0092563E call qword ptr [r9+4F8h]
+00925645 mov rbx,[rsp+68h]
+0092564A add rsp,50h
+0092564E pop rdi
+0092564F ret
+00925650 call 0000000180317B80h

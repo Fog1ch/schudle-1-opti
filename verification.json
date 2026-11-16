@@ -1,0 +1,35 @@
+{
+  "utc": "2026-11-15T22:42:09.157992+00:00",
+  "binary_identity_unchanged": true,
+  "preferences_unchanged": true,
+  "profiles_prepared_not_applied": [
+    "quiet-translation",
+    "texture-2560",
+    "ui-scan"
+  ],
+  "unit_tests_passed": 7,
+  "fixture_integration_tests_passed": 7,
+  "game_tests_performed": false,
+  "asset_containers_indexed": 9,
+  "asset_type_records": {
+    "Texture2D": 3064,
+    "AudioClip": 1310,
+    "Shader": 206,
+    "Mesh": 4261
+  },
+  "historical_log_summary": {
+    "records": 26,
+    "uncontrolled_sessions": true,
+    "min_reported_avg_fps": 18.4,
+    "max_reported_avg_fps": 82.1,
+    "largest_reported_frame_ms": 4281.3,
+    "warning": "Not a baseline or A/B test. Reported 1% low is reciprocal p99, not mean slowest 1%."
+  },
+  "scope": "No game launch, binary patch, save change or profile application. Tests touched fixtures only.",
+  "known_limits": [
+    "Asset parser is narrow, not independently cross-validated",
+    "Assembly names extracted from IL are not a complete dependency resolver",
+    "No measured performance benefit",
+    "No full native decompilation or per-resource decoding"
+  ]
+}

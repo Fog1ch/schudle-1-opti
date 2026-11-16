@@ -1,0 +1,44 @@
+System.Void ScheduleOne.NPCs.Schedules.NPCEvent_Conversate::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+009668E0 mov [rsp+8],rbx
+009668E5 push rdi
+009668E6 sub rsp,40h
+009668EA xor r8d,r8d
+009668ED mov edi,edx
+009668EF mov rbx,rcx
+009668F2 call 00000001809641D0h ; System.Void ScheduleOne.NPCs.Schedules.NPCAction::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+009668F7 xor edx,edx
+009668F9 mov rcx,rbx
+009668FC call 0000000180964300h ; System.Boolean ScheduleOne.NPCs.Schedules.NPCAction::get_IsActive()
+00966901 test al,al
+00966903 je short 000000018096696Ah
+00966905 cmp edi,4
+00966908 jne short 000000018096696Ah
+0096690A mov rax,[rbx+128h]
+00966911 test rax,rax
+00966914 je short 0000000180966975h
+00966916 mov rdi,[rax+170h]
+0096691D xor edx,edx
+0096691F mov rcx,rbx
+00966922 call 0000000180966B40h ; UnityEngine.Transform ScheduleOne.NPCs.Schedules.NPCEvent_Conversate::get_StandPoint()
+00966927 test rax,rax
+0096692A je short 0000000180966975h
+0096692C xor r8d,r8d
+0096692F lea rcx,[rsp+30h]
+00966934 mov rdx,rax
+00966937 call 0000000182B877A0h ; UnityEngine.Vector3 UnityEngine.Transform::get_forward()
+0096693C test rdi,rdi
+0096693F je short 0000000180966975h
+00966941 movsd xmm0,[rax]
+00966945 lea rdx,[rsp+20h]
+0096694A mov eax,[rax+8]
+0096694D xor r9d,r9d
+00966950 movss xmm2,[182E5CB40h]
+00966958 mov rcx,rdi
+0096695B movsd [rsp+20h],xmm0
+00966961 mov [rsp+28h],eax
+00966965 call 00000001808F45C0h ; System.Void ScheduleOne.NPCs.NPCMovement::FaceDirection(UnityEngine.Vector3,System.Single)
+0096696A mov rbx,[rsp+50h]
+0096696F add rsp,40h
+00966973 pop rdi
+00966974 ret
+00966975 call 0000000180317B80h

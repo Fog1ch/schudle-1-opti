@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "A+/yPJLv2CQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\herob\\Documents\\notion-code\\work\\ScheduleI-Performance-Lab-20261115\\phase2-ab-followup-20261116-0053\\metadata-reader\\Reader.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\herob\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.25\\microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\herob\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.25\\microsoft.windowsdesktop.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\herob\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.25\\microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\herob\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.25\\microsoft.netcore.app.host.win-x64.8.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}

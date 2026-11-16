@@ -1,0 +1,17 @@
+System.Void ScheduleOne.NPCs.Behaviour.SmokeBreakBehaviour::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+0095AB50 mov [rsp+8],rbx
+0095AB55 push rdi
+0095AB56 sub rsp,20h
+0095AB5A xor r8d,r8d
+0095AB5D mov ebx,edx
+0095AB5F mov rdi,rcx
+0095AB62 call 0000000180919EF0h ; System.Void ScheduleOne.NPCs.Behaviour.Behaviour::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+0095AB67 cmp ebx,4
+0095AB6A jne short 000000018095AB76h
+0095AB6C xor edx,edx
+0095AB6E mov rcx,rdi
+0095AB71 call 0000000180959E10h ; System.Void ScheduleOne.NPCs.Behaviour.SmokeBreakBehaviour::BeginSmokeBreak()
+0095AB76 mov rbx,[rsp+30h]
+0095AB7B add rsp,20h
+0095AB7F pop rdi
+0095AB80 ret

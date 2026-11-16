@@ -1,0 +1,48 @@
+System.Void ScheduleOne.NPCs.Schedules.NPCEvent_Sit::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+0096B7D0 mov [rsp+8],rbx
+0096B7D5 push rdi
+0096B7D6 sub rsp,20h
+0096B7DA cmp byte ptr [183BFD5E3h],0
+0096B7E1 mov ebx,edx
+0096B7E3 mov rdi,rcx
+0096B7E6 jne short 000000018096B7FBh
+0096B7E8 lea rcx,[1839C5980h]
+0096B7EF call 00000001803178A0h
+0096B7F4 mov byte ptr [183BFD5E3h],1
+0096B7FB xor r8d,r8d
+0096B7FE mov edx,ebx
+0096B800 mov rcx,rdi
+0096B803 call 00000001809641D0h ; System.Void ScheduleOne.NPCs.Schedules.NPCAction::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+0096B808 xor edx,edx
+0096B80A mov rcx,rdi
+0096B80D call 0000000180964300h ; System.Boolean ScheduleOne.NPCs.Schedules.NPCAction::get_IsActive()
+0096B812 test al,al
+0096B814 je short 000000018096B86Fh
+0096B816 cmp ebx,4
+0096B819 jne short 000000018096B86Fh
+0096B81B xor ecx,ecx
+0096B81D call 0000000180CA5870h ; System.Boolean FishNet.InstanceFinder::get_IsServer()
+0096B822 test al,al
+0096B824 je short 000000018096B86Fh
+0096B826 mov rbx,[rdi+158h]
+0096B82D test rbx,rbx
+0096B830 je short 000000018096B87Ah
+0096B832 mov rcx,[rdi+158h]
+0096B839 xor edx,edx
+0096B83B mov rbx,[rbx+20h]
+0096B83F call 00000001807CF9E0h ; ScheduleOne.AvatarFramework.Animation.AvatarSeat ScheduleOne.AvatarFramework.Animation.AvatarSeatSet::GetRandomFreeSeat()
+0096B844 mov r8,[1839C5980h]
+0096B84B mov rdx,rax
+0096B84E mov rcx,rbx
+0096B851 call 0000000180DAFE60h ; System.Int32 FluffyUnderware.DevTools.Extensions.ArrayExt::IndexOf(T[],T)
+0096B856 mov r10,[rdi]
+0096B859 mov r8d,eax
+0096B85C xor edx,edx
+0096B85E mov rcx,rdi
+0096B861 mov r9,[r10+410h]
+0096B868 call qword ptr [r10+408h]
+0096B86F mov rbx,[rsp+30h]
+0096B874 add rsp,20h
+0096B878 pop rdi
+0096B879 ret
+0096B87A call 0000000180317B80h

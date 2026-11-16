@@ -1,0 +1,22 @@
+System.Void ScheduleOne.Employees.Employee::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+006D7B40 push rbx
+006D7B42 sub rsp,20h
+006D7B46 mov rbx,rcx
+006D7B49 test edx,edx
+006D7B4B je short 00000001806D7B5Dh
+006D7B4D mov dword ptr [rcx+348h],0
+006D7B57 add rsp,20h
+006D7B5B pop rbx
+006D7B5C ret
+006D7B5D xor ecx,ecx
+006D7B5F call 0000000182B84520h ; System.Single UnityEngine.Time::get_timeSinceLevelLoad()
+006D7B64 subss xmm0,[rbx+34Ch]
+006D7B6C comiss xmm0,[182E5D704h]
+006D7B73 jbe short 00000001806D7B8Ah
+006D7B75 xor ecx,ecx
+006D7B77 call 0000000182B84520h ; System.Single UnityEngine.Time::get_timeSinceLevelLoad()
+006D7B7C inc dword ptr [rbx+348h]
+006D7B82 movss [rbx+34Ch],xmm0
+006D7B8A add rsp,20h
+006D7B8E pop rbx
+006D7B8F ret

@@ -1,0 +1,40 @@
+{
+  "status": "VERIFIED",
+  "package_path": "C:\\Users\\herob\\Documents\\notion-code\\work\\ScheduleI-Performance-Lab-20261115\\EXPORT\\AI_RESEARCH_PACKAGE",
+  "archive_path": "C:\\Users\\herob\\Documents\\notion-code\\work\\ScheduleI-Performance-Lab-20261115\\EXPORT\\AI_RESEARCH_PACKAGE_20261116.zip",
+  "package_files": 448,
+  "package_bytes": 77993843,
+  "archive_bytes": 5992823,
+  "archive_sha256": "f06ed21bd52cf18e9e06451189ad194dd378ec814f57600f0919b2efe7e7f0d5",
+  "archive_entries": 448,
+  "zip_crc": "PASS",
+  "final_internal_links": 210,
+  "manifest_entries": 447,
+  "original_non_save_files_unchanged": 889,
+  "offline_relocated_tests": [
+    {
+      "command": "verify",
+      "exit_code": 0,
+      "stdout_tail": "{\n  \"verified_entries\": 447,\n  \"failures\": [],\n  \"note\": \"Manifest excludes itself. Archive SHA256 is supplied separately. Checks integrity, not truth of claims.\"\n}\n"
+    },
+    {
+      "command": "methods",
+      "exit_code": 0,
+      "stdout_tail": "ce\": \"EVIDENCE/phase2/evidence/methods-all.json\", \"record\": {\"Assembly\": \"Assembly-CSharp\", \"Type\": \"ScheduleOne.AvatarFramework.Animation.AvatarAnimationId\", \"Name\": \"Init\", \"Signature\": \"System.Void ScheduleOne.AvatarFramework.Animation.AvatarAnimationId::Init()\", \"RVA\": 8147664, \"Offset\": 8144080, \"Length\": 158}}\n{\"source\": \"EVIDENCE/phase2/evidence/methods-all.json\", \"record\": {\"Assembly\": \"Assembly-CSharp\", \"Type\": \"ScheduleOne.AvatarFramework.Animation.AvatarAnimationId\", \"Name\": \"Get\", \"Signature\": \"System.Int32 ScheduleOne.AvatarFramework.Animation.AvatarAnimationId::Get(System.String)\", \"RVA\": 8147376, \"Offset\": 8143792, \"Length\": 279}}\n{\"source\": \"EVIDENCE/phase2/evidence/methods-all.json\", \"record\": {\"Assembly\": \"Assembly-CSharp\", \"Type\": \"ScheduleOne.AvatarFramework.Animation.AvatarAnimationId\", \"Name\": \".cctor\", \"Signature\": \"System.Void ScheduleOne.AvatarFramework.Animation.AvatarAnimationId::.cctor()\", \"RVA\": 8147824, \"Offset\": 8144240, \"Length\": 771}}\nMATCHES 3 SHOWN 3\n"
+    },
+    {
+      "command": "calls",
+      "exit_code": 0,
+      "stdout_tail": "\": \"EVIDENCE/current/native-edges.json\", \"record\": {\"From\": \"System.Single ScheduleOne.Growing.GrowContainer::GetAverageLightExposure(System.Single&)\", \"FromRVA\": 8276912, \"SiteRVA\": 8277165, \"TargetRVA\": 10218352, \"Kind\": \"Call\", \"AliasCount\": 1, \"Targets\": [\"ScheduleOne.Tiles.Tile ScheduleOne.Tiles.Grid::GetTile(ScheduleOne.Tiles.Coordinate)\"]}}\n{\"source\": \"EVIDENCE/current/native-edges.json\", \"record\": {\"From\": \"System.Single ScheduleOne.Growing.GrowContainer::GetAverageLightExposure(System.Single&)\", \"FromRVA\": 8276912, \"SiteRVA\": 8277200, \"TargetRVA\": 7426688, \"Kind\": \"Call\", \"AliasCount\": 1, \"Targets\": [\"System.Single ScheduleOne.Lighting.LightExposureNode::GetTotalExposure(System.Single&)\"]}}\n{\"source\": \"EVIDENCE/current/native-edges.json\", \"record\": {\"From\": \"System.Single ScheduleOne.Growing.GrowContainer::GetAverageLightExposure(System.Single&)\", \"FromRVA\": 8276912, \"SiteRVA\": 8277346, \"TargetRVA\": 3242880, \"Kind\": \"Call\", \"AliasCount\": 0, \"Targets\": []}}\nMATCHES 10 SHOWN 10\n"
+    },
+    {
+      "command": "mods",
+      "exit_code": 0,
+      "stdout_tail": "\": \"EVIDENCE/current/mod-target-overlaps.json\", \"record\": {\"type\": \"Il2CppScheduleOne.Management.PackagerConfiguration\", \"method\": \"ShouldSave\", \"records\": [{\"assembly\": \"Schedule1BetterEmployees\", \"owner\": \"System.Boolean Schedule1BetterEmployees.EmployeePatches::PatchPackagerConfigurationShouldSave(System.Boolean&)\", \"target_type\": \"Il2CppScheduleOne.Management.PackagerConfiguration\", \"target_method\": \"ShouldSave\", \"precision\": \"type+method name; overload and dynamic patches require further resolution\"}, {\"assembly\": \"WagesManager\", \"owner\": \"System.Void WagesManager.PackagerConfigurationPatches::PackagerConfiguration_ShouldSave(Il2CppScheduleOne.Management.PackagerConfiguration,System.Boolean&)\", \"target_type\": \"Il2CppScheduleOne.Management.PackagerConfiguration\", \"target_method\": \"ShouldSave\", \"precision\": \"type+method name; overload and dynamic patches require further resolution\"}], \"status\": \"overlapping static declared targets, NOT proven runtime conflict\"}}\nMATCHES 13 SHOWN 13\n"
+    }
+  ],
+  "handoff_path": "C:\\Users\\herob\\Documents\\notion-code\\work\\ScheduleI-Performance-Lab-20261115\\EXPORT\\AI_RESEARCH_PACKAGE\\HANDOFF_PROMPT.md",
+  "standalone_handoff_path": "C:\\Users\\herob\\Documents\\notion-code\\work\\ScheduleI-Performance-Lab-20261115\\EXPORT\\HANDOFF_PROMPT.md",
+  "full_created_file_list": "C:\\Users\\herob\\Documents\\notion-code\\work\\ScheduleI-Performance-Lab-20261115\\EXPORT\\AI_RESEARCH_PACKAGE\\CREATED_FILES.txt",
+  "bounded_scope": "89 new selected native ranges, 2 incomplete; prior NPC research reused; no runtime profiling or full game source recovery"
+}

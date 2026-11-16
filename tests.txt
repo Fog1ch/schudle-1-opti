@@ -1,0 +1,31 @@
+C:\Users\herob\AppData\Local\Programs\Python\Python312\python.exe s1lab.py selftest
+
+test_bom (__main__.selftest.<locals>.Tests.test_bom) ... ok
+test_duplicate (__main__.selftest.<locals>.Tests.test_duplicate) ... ok
+test_edit (__main__.selftest.<locals>.Tests.test_edit) ... ok
+test_missing (__main__.selftest.<locals>.Tests.test_missing) ... ok
+test_rollback (__main__.selftest.<locals>.Tests.test_rollback) ... ok
+test_sections (__main__.selftest.<locals>.Tests.test_sections) ... ok
+test_stale (__main__.selftest.<locals>.Tests.test_stale) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.030s
+
+OK
+
+C:\Users\herob\AppData\Local\Programs\Python\Python312\python.exe test_integration.py
+Applied and verified. No game launched.
+Rollback verified.
+
+test_changed_binary_blocks (__main__.Transactions.test_changed_binary_blocks) ... ok
+test_changed_preferences_blocks (__main__.Transactions.test_changed_preferences_blocks) ... ok
+test_confirmation_required (__main__.Transactions.test_confirmation_required) ... ok
+test_extra_patch_blocks_even_with_updated_hash (__main__.Transactions.test_extra_patch_blocks_even_with_updated_hash) ... ok
+test_full_apply_rollback_fixture (__main__.Transactions.test_full_apply_rollback_fixture) ... ok
+test_running_game_blocks (__main__.Transactions.test_running_game_blocks) ... ok
+test_target_escape_blocks (__main__.Transactions.test_target_escape_blocks) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.413s
+
+OK

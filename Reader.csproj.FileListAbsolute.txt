@@ -1,0 +1,17 @@
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\bin\Release\net8.0\Reader.exe
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\bin\Release\net8.0\Reader.deps.json
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\bin\Release\net8.0\Reader.runtimeconfig.json
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\bin\Release\net8.0\Reader.dll
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\bin\Release\net8.0\Reader.pdb
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\bin\Release\net8.0\Mono.Cecil.dll
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\obj\Release\net8.0\Reader.csproj.AssemblyReference.cache
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\obj\Release\net8.0\Reader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\obj\Release\net8.0\Reader.AssemblyInfoInputs.cache
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\obj\Release\net8.0\Reader.AssemblyInfo.cs
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\obj\Release\net8.0\Reader.csproj.CoreCompileInputs.cache
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\obj\Release\net8.0\Reader.csproj.Up2Date
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\obj\Release\net8.0\Reader.dll
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\obj\Release\net8.0\refint\Reader.dll
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\obj\Release\net8.0\Reader.pdb
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\obj\Release\net8.0\Reader.genruntimeconfig.cache
+C:\Users\herob\Documents\notion-code\work\ScheduleI-Performance-Lab-20261115\phase2-ab-followup-20261116-0053\metadata-reader\obj\Release\net8.0\ref\Reader.dll

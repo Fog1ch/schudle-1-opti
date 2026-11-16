@@ -1,0 +1,95 @@
+System.Void ScheduleOne.NPCs.Behaviour.MoveToAndActBehaviour::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+00962AD0 mov [rsp+18h],rbx
+00962AD5 push rdi
+00962AD6 sub rsp,40h
+00962ADA cmp byte ptr [183BFD58Eh],0
+00962AE1 mov ebx,edx
+00962AE3 mov rdi,rcx
+00962AE6 jne short 0000000180962B13h
+00962AE8 lea rcx,[183A09C10h]
+00962AEF call 00000001803178A0h
+00962AF4 lea rcx,[1839C1A20h]
+00962AFB call 00000001803178A0h
+00962B00 lea rcx,[183A08930h]
+00962B07 call 00000001803178A0h
+00962B0C mov byte ptr [183BFD58Eh],1
+00962B13 xor r8d,r8d
+00962B16 mov edx,ebx
+00962B18 mov rcx,rdi
+00962B1B call 0000000180919EF0h ; System.Void ScheduleOne.NPCs.Behaviour.Behaviour::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+00962B20 test ebx,ebx
+00962B22 je 0000000180962BA9h
+00962B28 mov dword ptr [rdi+1D4h],0
+00962B32 cmp ebx,4
+00962B35 jne 0000000180962C5Fh
+00962B3B xor edx,edx
+00962B3D mov rcx,rdi
+00962B40 call 000000018091A0D0h ; ScheduleOne.NPCs.NPC ScheduleOne.NPCs.Behaviour.Behaviour::get_Npc()
+00962B45 test rax,rax
+00962B48 je 0000000180962C70h
+00962B4E mov rcx,[rax+170h]
+00962B55 test rcx,rcx
+00962B58 je 0000000180962C70h
+00962B5E movsd xmm0,[rdi+1BCh]
+00962B66 lea rdx,[rsp+30h]
+00962B6B mov eax,[rdi+1C4h]
+00962B71 xor r9d,r9d
+00962B74 movss xmm2,[182E5CB40h]
+00962B7C movsd [rsp+30h],xmm0
+00962B82 mov [rsp+38h],eax
+00962B86 call 00000001808F45C0h ; System.Void ScheduleOne.NPCs.NPCMovement::FaceDirection(UnityEngine.Vector3,System.Single)
+00962B8B xor r8d,r8d
+00962B8E mov byte ptr [rdi+1D0h],1
+00962B95 xor edx,edx
+00962B97 mov rcx,rdi
+00962B9A mov rbx,[rsp+60h]
+00962B9F add rsp,40h
+00962BA3 pop rdi
+00962BA4 jmp 00000001809628D0h ; System.Void ScheduleOne.NPCs.Behaviour.MoveToAndActBehaviour::StartAct(FishNet.Connection.NetworkConnection)
+00962BA9 mov eax,[rdi+1D4h]
+00962BAF inc eax
+00962BB1 mov [rdi+1D4h],eax
+00962BB7 cmp eax,3
+00962BBA jl 0000000180962C5Fh
+00962BC0 mov [rsp+50h],rsi
+00962BC5 xor edx,edx
+00962BC7 mov rsi,[rdi+120h]
+00962BCE mov rcx,rdi
+00962BD1 call 000000018091A0D0h ; ScheduleOne.NPCs.NPC ScheduleOne.NPCs.Behaviour.Behaviour::get_Npc()
+00962BD6 test rax,rax
+00962BD9 je 0000000180962C6Ah
+00962BDF xor edx,edx
+00962BE1 mov rcx,rax
+00962BE4 call 00000001808DA830h ; System.String ScheduleOne.NPCs.NPC::get_FullName()
+00962BE9 mov ecx,[rdi+1D4h]
+00962BEF lea rdx,[rsp+58h]
+00962BF4 mov [rsp+58h],ecx
+00962BF8 mov rbx,rax
+00962BFB mov rcx,[1839C1A20h]
+00962C02 call 0000000180316A80h
+00962C07 mov rcx,[183A08930h]
+00962C0E mov r9,rax
+00962C11 mov r8,rbx
+00962C14 mov qword ptr [rsp+20h],0
+00962C1D mov rdx,rsi
+00962C20 call 00000001819E6C50h ; System.String System.String::Format(System.String,System.Object,System.Object,System.Object)
+00962C25 mov rcx,[183A09C10h]
+00962C2C mov rbx,rax
+00962C2F cmp dword ptr [rcx+0E0h],0
+00962C36 jne short 0000000180962C3Dh
+00962C38 call 0000000180317C30h
+00962C3D xor edx,edx
+00962C3F mov rcx,rbx
+00962C42 call 0000000182B41A00h ; System.Void UnityEngine.Debug::LogError(System.Object)
+00962C47 mov rax,[rdi]
+00962C4A mov rcx,rdi
+00962C4D mov rdx,[rax+290h]
+00962C54 call qword ptr [rax+288h]
+00962C5A mov rsi,[rsp+50h]
+00962C5F mov rbx,[rsp+60h]
+00962C64 add rsp,40h
+00962C68 pop rdi
+00962C69 ret
+00962C6A call 0000000180317B80h
+00962C6F int3
+00962C70 call 0000000180317B80h

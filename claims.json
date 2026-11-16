@@ -1,0 +1,123 @@
+[
+  {
+    "id": "F01",
+    "status": "CONFIRMED_STATIC",
+    "claim": "EndSetDestination invokes callback before clearing callback/destination state",
+    "file": "EVIDENCE/phase2/evidence/EndSetDestination_8F4490.asm.txt",
+    "needles": [
+      "008F44B2",
+      "008F44BC",
+      "008F44CE"
+    ]
+  },
+  {
+    "id": "F02",
+    "status": "CONFIRMED_STATIC",
+    "claim": "AvatarAnimationId has cache-hit return; StringToHash is on miss path",
+    "file": "EVIDENCE/current/native/7C51B0.asm.txt",
+    "needles": [
+      "007C5248",
+      "007C5279",
+      "007C52AC"
+    ]
+  },
+  {
+    "id": "F03",
+    "status": "CONFIRMED_STATIC",
+    "claim": "ShadowLODController skips setter loop when applied mode matches",
+    "file": "EVIDENCE/current/native/723040.asm.txt",
+    "needles": [
+      "0072318A",
+      "0072318D",
+      "007231BC"
+    ]
+  },
+  {
+    "id": "F04",
+    "status": "CONFIRMED_STATIC",
+    "claim": "TimeManager tick coroutine directly calls staggered ActionList",
+    "file": "EVIDENCE/current/native/9CE410.asm.txt",
+    "needles": [
+      "ActionList::InvokeAllStaggered"
+    ]
+  },
+  {
+    "id": "F05",
+    "status": "CONFIRMED_STATIC",
+    "claim": "AddPath stores input path pointer in entry",
+    "file": "EVIDENCE/current/native/8FB4A0.asm.txt",
+    "needles": [
+      "008FB524 mov [rdi+28h],rsi"
+    ]
+  },
+  {
+    "id": "F06",
+    "status": "CONFIRMED_STATIC",
+    "claim": "GetPath returns retained path reference from matching entry",
+    "file": "EVIDENCE/current/native/8FB5B0.asm.txt",
+    "needles": [
+      "008FB6F7",
+      "008FB70A"
+    ]
+  },
+  {
+    "id": "F07",
+    "status": "CONFIRMED_STATIC",
+    "claim": "GrowContainer light loop uses Grid and LightExposureNode",
+    "file": "EVIDENCE/current/native/7E4BB0.asm.txt",
+    "needles": [
+      "Grid::GetTile",
+      "LightExposureNode::GetTotalExposure"
+    ]
+  },
+  {
+    "id": "F08",
+    "status": "CONFIRMED_STATIC",
+    "claim": "Two installed mods declare PackagerConfiguration.ShouldSave targets",
+    "file": "EVIDENCE/current/mod-target-overlaps.json",
+    "needles": [
+      "Schedule1BetterEmployees",
+      "WagesManager",
+      "ShouldSave"
+    ]
+  },
+  {
+    "id": "F09",
+    "status": "CONFIRMED_STATIC",
+    "claim": "LoadManager load routine has LoadSceneAsync call",
+    "file": "EVIDENCE/current/native/590A80.asm.txt",
+    "needles": [
+      "SceneManager::LoadSceneAsync"
+    ]
+  },
+  {
+    "id": "F10",
+    "status": "CONFIRMED_STATIC",
+    "claim": "PhysicsManager gravity RPC writes Physics.gravity",
+    "file": "EVIDENCE/current/native/58B420.asm.txt",
+    "needles": [
+      "Physics::set_gravity"
+    ]
+  },
+  {
+    "id": "F11",
+    "status": "CONFIRMED_STATIC",
+    "claim": "NPC animation routes local velocity to SetMotion and animation parameters",
+    "file": "EVIDENCE/current/native/8E9870.asm.txt",
+    "needles": [
+      "InverseTransformVector",
+      "AvatarAnimation::SetMotion",
+      "AvatarAnimation::SetBool"
+    ]
+  },
+  {
+    "id": "F12",
+    "status": "CONFIRMED_STATIC",
+    "claim": "Container dependency table includes level1 sharedassets links",
+    "file": "EVIDENCE/current/asset-containers-current.json",
+    "needles": [
+      "level1",
+      "sharedassets1.assets"
+    ]
+  }
+]

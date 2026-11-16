@@ -1,0 +1,165 @@
+System.Void ScheduleOne.NPCs.Behaviour.Behaviour::SetDestination(UnityEngine.Vector3,System.Boolean,System.Single)
+00919A60 mov [rsp+10h],rbx
+00919A65 mov [rsp+18h],rsi
+00919A6A push rdi
+00919A6B sub rsp,90h
+00919A72 cmp byte ptr [183BFD360h],0
+00919A79 movzx ebx,r8b
+00919A7D movaps [rsp+70h],xmm7
+00919A82 mov rsi,rdx
+00919A85 movaps xmm7,xmm3
+00919A88 mov rdi,rcx
+00919A8B jne short 0000000180919AC4h
+00919A8D lea rcx,[183A05220h]
+00919A94 call 00000001803178A0h
+00919A99 lea rcx,[1839F9D68h]
+00919AA0 call 00000001803178A0h
+00919AA5 lea rcx,[1839EA550h]
+00919AAC call 00000001803178A0h
+00919AB1 lea rcx,[1839AB028h]
+00919AB8 call 00000001803178A0h
+00919ABD mov byte ptr [183BFD360h],1
+00919AC4 xorps xmm0,xmm0
+00919AC7 xor eax,eax
+00919AC9 xor ecx,ecx
+00919ACB mov [rsp+60h],eax
+00919ACF movups [rsp+40h],xmm0
+00919AD4 movups [rsp+50h],xmm0
+00919AD9 call 0000000180CA5870h ; System.Boolean FishNet.InstanceFinder::get_IsServer()
+00919ADE test al,al
+00919AE0 je 0000000180919D4Bh
+00919AE6 mov [rsp+0A0h],rbp
+00919AEE movaps [rsp+80h],xmm6
+00919AF6 test bl,bl
+00919AF8 je 0000000180919CADh
+00919AFE cmp dword ptr [rdi+168h],5
+00919B05 jl 0000000180919CADh
+00919B0B mov rax,[rdi+138h]
+00919B12 test rax,rax
+00919B15 je 0000000180919D65h
+00919B1B mov rcx,[rax+1A8h]
+00919B22 test rcx,rcx
+00919B25 je 0000000180919D65h
+00919B2B mov rcx,[rcx+170h]
+00919B32 test rcx,rcx
+00919B35 je 0000000180919D65h
+00919B3B movsd xmm0,[rsi]
+00919B3F lea rdx,[rsp+30h]
+00919B44 mov eax,[rsi+8]
+00919B47 xor r9d,r9d
+00919B4A movss xmm2,[182E5CB44h]
+00919B52 movsd [rsp+30h],xmm0
+00919B58 mov [rsp+38h],eax
+00919B5C call 00000001808F3370h ; System.Boolean ScheduleOne.NPCs.NPCMovement::CanGetTo(UnityEngine.Vector3,System.Single)
+00919B61 test al,al
+00919B63 jne 0000000180919CADh
+00919B69 mov rax,[rdi+138h]
+00919B70 test rax,rax
+00919B73 je 0000000180919D65h
+00919B79 mov rcx,[rax+1A8h]
+00919B80 test rcx,rcx
+00919B83 je 0000000180919D65h
+00919B89 xor edx,edx
+00919B8B call 00000001808DA830h ; System.String ScheduleOne.NPCs.NPC::get_FullName()
+00919B90 mov rbx,rax
+00919B93 xor r9d,r9d
+00919B96 xor r8d,r8d
+00919B99 xor edx,edx
+00919B9B mov rcx,rsi
+00919B9E call 0000000180669250h
+00919BA3 mov rdx,[1839AB028h]
+00919BAA xor r9d,r9d
+00919BAD mov r8,rax
+00919BB0 mov rcx,rbx
+00919BB3 call 00000001819E3810h ; System.String System.String::Concat(System.String,System.String,System.String)
+00919BB8 mov rcx,[1839F9D68h]
+00919BBF mov rbx,rax
+00919BC2 cmp dword ptr [rcx+0E0h],0
+00919BC9 jne short 0000000180919BD0h
+00919BCB call 0000000180317C30h
+00919BD0 xor r8d,r8d
+00919BD3 xor edx,edx
+00919BD5 mov rcx,rbx
+00919BD8 call 00000001808A8B40h ; System.Void ScheduleOne.Console::LogWarning(System.Object,UnityEngine.Object)
+00919BDD mov rcx,[1839EA550h]
+00919BE4 movsd xmm6,[rsi]
+00919BE8 mov ebx,[rsi+8]
+00919BEB cmp dword ptr [rcx+0E0h],0
+00919BF2 jne short 0000000180919BF9h
+00919BF4 call 0000000180317C30h
+00919BF9 movss xmm2,[182E5CB50h]
+00919C01 lea rdx,[rsp+40h]
+00919C06 mov qword ptr [rsp+28h],0
+00919C0F lea rcx,[rsp+30h]
+00919C14 mov r9d,0FFFFFFFFh
+00919C1A mov byte ptr [rsp+20h],1
+00919C1F movsd [rsp+30h],xmm6
+00919C25 mov [rsp+38h],ebx
+00919C29 call 0000000180717B80h ; System.Boolean ScheduleOne.DevUtilities.NavMeshUtility::SamplePosition(UnityEngine.Vector3,UnityEngine.AI.NavMeshHit&,System.Single,System.Int32,System.Boolean)
+00919C2E xor r8d,r8d
+00919C31 lea rdx,[rsp+40h]
+00919C36 lea rcx,[rsp+30h]
+00919C3B call 0000000182B204D0h ; UnityEngine.Vector3 UnityEngine.AI.NavMeshHit::get_position() | UnityEngine.Vector3 UnityEngine.Bounds::get_center() | UnityEngine.Vector3Int UnityEngine.BoundsInt::get_position() | UnityEngine.Vector3 UnityEngine.Plane::get_normal() | UnityEngine.Vector3 UnityEngine.Ray::get_origin() | UnityEngine.Vector3 UnityEngine.RaycastHit::get_point() | UnityEngine.Vector3 UnityEngine.ContactPoint::get_point()
+00919C40 movsd xmm0,[rax]
+00919C44 mov edx,[rax+8]
+00919C47 mov rax,[rdi+138h]
+00919C4E movsd [rsi],xmm0
+00919C52 mov [rsi+8],edx
+00919C55 test rax,rax
+00919C58 je 0000000180919D65h
+00919C5E mov rax,[rax+1A8h]
+00919C65 test rax,rax
+00919C68 je 0000000180919D65h
+00919C6E mov rcx,[rax+170h]
+00919C75 test rcx,rcx
+00919C78 je 0000000180919D65h
+00919C7E mov [rsp+38h],edx
+00919C82 xor r8d,r8d
+00919C85 lea rdx,[rsp+30h]
+00919C8A movsd [rsp+30h],xmm0
+00919C90 call 00000001808FA9D0h ; System.Void ScheduleOne.NPCs.NPCMovement::Warp(UnityEngine.Vector3)
+00919C95 mov rax,[rdi]
+00919C98 mov edx,4
+00919C9D mov rcx,rdi
+00919CA0 mov r8,[rax+360h]
+00919CA7 call qword ptr [rax+358h]
+00919CAD mov rax,[rdi+138h]
+00919CB4 test rax,rax
+00919CB7 je 0000000180919D65h
+00919CBD mov rcx,[rax+1A8h]
+00919CC4 test rcx,rcx
+00919CC7 je 0000000180919D65h
+00919CCD mov rbx,[rcx+170h]
+00919CD4 mov rcx,[183A05220h]
+00919CDB movsd xmm6,[rsi]
+00919CDF mov ebp,[rsi+8]
+00919CE2 call 0000000180317B20h
+00919CE7 mov r8,[rdi]
+00919CEA xor r9d,r9d
+00919CED mov rdx,rdi
+00919CF0 mov rcx,rax
+00919CF3 mov rsi,rax
+00919CF6 mov r8,[r8+360h]
+00919CFD call 00000001809D7510h ; System.Void ScheduleOne.Vehicles.AI.VehicleAgent/NavigationCallback::.ctor(System.Object,System.IntPtr) | System.Void ScheduleOne.UI.CyclerEvent::.ctor(System.Object,System.IntPtr) | System.Void ScheduleOne.UI.TabSelectedEvent::.ctor(System.Object,System.IntPtr) | System.Void Steamworks.SteamAPI_CheckCallbackRegistered_t::.ctor(System.Object,System.IntPtr) | System.Void Mono.Unix.Native.SignalHandler::.ctor(System.Object,System.IntPtr) | System.Void RootMotion.FinalIK.IKSolver/IterationDelegate::.ctor(System.Object,System.IntPtr) | System.Void UnityEngine.AudioClip/PCMSetPositionCallback::.ctor(System.Object,System.IntPtr) | System.Void UnityEngine.Windows.Speech.PhraseRecognitionSystem/ErrorDelegate::.ctor(System.Object,System.IntPtr)
+00919D02 test rbx,rbx
+00919D05 je short 0000000180919D65h
+00919D07 movss xmm0,[182E5D71Ch]
+00919D0F lea rdx,[rsp+30h]
+00919D14 mov qword ptr [rsp+28h],0
+00919D1D movaps xmm3,xmm7
+00919D20 mov r8,rsi
+00919D23 movss [rsp+20h],xmm0
+00919D29 mov rcx,rbx
+00919D2C movsd [rsp+30h],xmm6
+00919D32 mov [rsp+38h],ebp
+00919D36 call 00000001808F8C90h ; System.Void ScheduleOne.NPCs.NPCMovement::SetDestination(UnityEngine.Vector3,System.Action`1<ScheduleOne.NPCs.NPCMovement/WalkResult>,System.Single,System.Single)
+00919D3B mov rbp,[rsp+0A0h]
+00919D43 movaps xmm6,[rsp+80h]
+00919D4B movaps xmm7,[rsp+70h]
+00919D50 lea r11,[rsp+90h]
+00919D58 mov rbx,[r11+18h]
+00919D5C mov rsi,[r11+20h]
+00919D60 mov rsp,r11
+00919D63 pop rdi
+00919D64 ret
+00919D65 call 0000000180317B80h

@@ -1,0 +1,113 @@
+System.Void ScheduleOne.NPCs.Behaviour.SmokeBreakBehaviour::BeginSmokeBreak()
+00959E10 push rsi
+00959E12 sub rsp,70h
+00959E16 cmp byte ptr [183BFD559h],0
+00959E1D mov rsi,rcx
+00959E20 jne short 0000000180959E4Dh
+00959E22 lea rcx,[183A09C10h]
+00959E29 call 00000001803178A0h
+00959E2E lea rcx,[183992508h]
+00959E35 call 00000001803178A0h
+00959E3A lea rcx,[183A05188h]
+00959E41 call 00000001803178A0h
+00959E46 mov byte ptr [183BFD559h],1
+00959E4D mov rcx,[rsi+170h]
+00959E54 mov [rsp+80h],rbx
+00959E5C mov [rsp+88h],rdi
+00959E64 movaps [rsp+60h],xmm6
+00959E69 movaps [rsp+50h],xmm7
+00959E6E movaps [rsp+40h],xmm8
+00959E74 test rcx,rcx
+00959E77 je 000000018095A00Dh
+00959E7D xor edx,edx
+00959E7F call 0000000180989CE0h ; System.Void ScheduleOne.NPCs.Other.SmokeCigarette::Begin()
+00959E84 mov rcx,[rsi+1A0h]
+00959E8B test rcx,rcx
+00959E8E je 000000018095A00Dh
+00959E94 xor r8d,r8d
+00959E97 xor edx,edx
+00959E99 call 0000000182B85CD0h ; UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
+00959E9E test rax,rax
+00959EA1 je 000000018095A00Dh
+00959EA7 xor r8d,r8d
+00959EAA lea rcx,[rsp+20h]
+00959EAF mov rdx,rax
+00959EB2 call 0000000182B87D00h ; UnityEngine.Vector3 UnityEngine.Transform::get_position()
+00959EB7 xor edx,edx
+00959EB9 mov rcx,rsi
+00959EBC movss xmm6,[rax]
+00959EC0 movss xmm7,[rax+4]
+00959EC5 movss xmm8,[rax+8]
+00959ECB call 000000018091A0D0h ; ScheduleOne.NPCs.NPC ScheduleOne.NPCs.Behaviour.Behaviour::get_Npc()
+00959ED0 test rax,rax
+00959ED3 je 000000018095A00Dh
+00959ED9 mov rcx,[rax+170h]
+00959EE0 test rcx,rcx
+00959EE3 je 000000018095A00Dh
+00959EE9 xor edx,edx
+00959EEB call 0000000182B74460h ; UnityEngine.Transform UnityEngine.Component::get_transform()
+00959EF0 test rax,rax
+00959EF3 je 000000018095A00Dh
+00959EF9 xor r8d,r8d
+00959EFC lea rcx,[rsp+30h]
+00959F01 mov rdx,rax
+00959F04 call 0000000182B87D00h ; UnityEngine.Vector3 UnityEngine.Transform::get_position()
+00959F09 subss xmm6,[rax]
+00959F0D subss xmm7,[rax+4]
+00959F12 subss xmm8,[rax+8]
+00959F18 xor r8d,r8d
+00959F1B lea rdx,[rsp+20h]
+00959F20 lea rcx,[rsp+30h]
+00959F25 movss [rsp+20h],xmm6
+00959F2B movss [rsp+24h],xmm7
+00959F31 movss [rsp+28h],xmm8
+00959F38 call 0000000180440A30h
+00959F3D xor edx,edx
+00959F3F mov rcx,rsi
+00959F42 mov ebx,[rax]
+00959F44 mov edi,[rax+8]
+00959F47 call 000000018091A0D0h ; ScheduleOne.NPCs.NPC ScheduleOne.NPCs.Behaviour.Behaviour::get_Npc()
+00959F4C test rax,rax
+00959F4F je 000000018095A00Dh
+00959F55 mov rcx,[rax+170h]
+00959F5C test rcx,rcx
+00959F5F je 000000018095A00Dh
+00959F65 movss xmm2,[182E5CB40h]
+00959F6D lea rdx,[rsp+20h]
+00959F72 xor r9d,r9d
+00959F75 mov [rsp+20h],ebx
+00959F79 mov dword ptr [rsp+24h],0
+00959F81 mov [rsp+28h],edi
+00959F85 call 00000001808F45C0h ; System.Void ScheduleOne.NPCs.NPCMovement::FaceDirection(UnityEngine.Vector3,System.Single)
+00959F8A cmp byte ptr [rsi+190h],0
+00959F91 je short 0000000180959FE7h
+00959F93 xor edx,edx
+00959F95 mov rcx,rsi
+00959F98 call 000000018091A0D0h ; ScheduleOne.NPCs.NPC ScheduleOne.NPCs.Behaviour.Behaviour::get_Npc()
+00959F9D test rax,rax
+00959FA0 je short 000000018095A00Dh
+00959FA2 xor edx,edx
+00959FA4 mov rcx,rax
+00959FA7 call 0000000182B7C030h ; System.String UnityEngine.Object::get_name()
+00959FAC mov r8,[183992508h]
+00959FB3 xor r9d,r9d
+00959FB6 mov rcx,[183A05188h]
+00959FBD mov rdx,rax
+00959FC0 call 00000001819E3810h ; System.String System.String::Concat(System.String,System.String,System.String)
+00959FC5 mov rcx,[183A09C10h]
+00959FCC mov rbx,rax
+00959FCF cmp dword ptr [rcx+0E0h],0
+00959FD6 jne short 0000000180959FDDh
+00959FD8 call 0000000180317C30h
+00959FDD xor edx,edx
+00959FDF mov rcx,rbx
+00959FE2 call 0000000182B424B0h ; System.Void UnityEngine.Debug::Log(System.Object)
+00959FE7 movaps xmm8,[rsp+40h]
+00959FED movaps xmm7,[rsp+50h]
+00959FF2 movaps xmm6,[rsp+60h]
+00959FF7 mov rdi,[rsp+88h]
+00959FFF mov rbx,[rsp+80h]
+0095A007 add rsp,70h
+0095A00B pop rsi
+0095A00C ret
+0095A00D call 0000000180317B80h

@@ -1,0 +1,28 @@
+System.Void ScheduleOne.NPCs.Schedules.NPCEvent_StayInBuilding::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+0096CBF0 mov [rsp+8],rbx
+0096CBF5 push rdi
+0096CBF6 sub rsp,20h
+0096CBFA xor r8d,r8d
+0096CBFD mov ebx,edx
+0096CBFF mov rdi,rcx
+0096CC02 call 00000001809641D0h ; System.Void ScheduleOne.NPCs.Schedules.NPCAction::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+0096CC07 xor edx,edx
+0096CC09 mov rcx,rdi
+0096CC0C call 0000000180964300h ; System.Boolean ScheduleOne.NPCs.Schedules.NPCAction::get_IsActive()
+0096CC11 test al,al
+0096CC13 je short 000000018096CC34h
+0096CC15 xor ecx,ecx
+0096CC17 call 0000000180CA5870h ; System.Boolean FishNet.InstanceFinder::get_IsServer()
+0096CC1C test al,al
+0096CC1E je short 000000018096CC34h
+0096CC20 cmp ebx,4
+0096CC23 je short 000000018096CC2Ah
+0096CC25 cmp ebx,3
+0096CC28 jne short 000000018096CC34h
+0096CC2A xor edx,edx
+0096CC2C mov rcx,rdi
+0096CC2F call 000000018096C660h ; System.Void ScheduleOne.NPCs.Schedules.NPCEvent_StayInBuilding::PlayEnterAnimation()
+0096CC34 mov rbx,[rsp+30h]
+0096CC39 add rsp,20h
+0096CC3D pop rdi
+0096CC3E ret

@@ -1,0 +1,102 @@
+System.Void ScheduleOne.NPCs.Schedules.NPCSignal_WalkToLocation::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+00970BE0 mov [rsp+8],rbx
+00970BE5 push rdi
+00970BE6 sub rsp,50h
+00970BEA cmp byte ptr [183BFD63Dh],0
+00970BF1 mov edi,edx
+00970BF3 mov rbx,rcx
+00970BF6 jne short 0000000180970C17h
+00970BF8 lea rcx,[183A09C10h]
+00970BFF call 00000001803178A0h
+00970C04 lea rcx,[1839D7680h]
+00970C0B call 00000001803178A0h
+00970C10 mov byte ptr [183BFD63Dh],1
+00970C17 xor r8d,r8d
+00970C1A mov edx,edi
+00970C1C mov rcx,rbx
+00970C1F call 00000001809641D0h ; System.Void ScheduleOne.NPCs.Schedules.NPCAction::WalkCallback(ScheduleOne.NPCs.NPCMovement/WalkResult)
+00970C24 xor edx,edx
+00970C26 mov rcx,rbx
+00970C29 call 0000000180964300h ; System.Boolean ScheduleOne.NPCs.Schedules.NPCAction::get_IsActive()
+00970C2E test al,al
+00970C30 je 0000000180970D6Eh
+00970C36 cmp edi,4
+00970C39 jne 0000000180970D4Bh
+00970C3F cmp byte ptr [183BFD63Fh],0
+00970C46 jne short 0000000180970C73h
+00970C48 lea rcx,[183A09C10h]
+00970C4F call 00000001803178A0h
+00970C54 lea rcx,[1839CB888h]
+00970C5B call 00000001803178A0h
+00970C60 lea rcx,[1839C9770h]
+00970C67 call 00000001803178A0h
+00970C6C mov byte ptr [183BFD63Fh],1
+00970C73 xor edx,edx
+00970C75 mov rcx,rbx
+00970C78 call 0000000180CCB150h ; System.Boolean FishNet.Object.NetworkBehaviour::get_IsServerInitialized()
+00970C7D test al,al
+00970C7F je short 0000000180970CDCh
+00970C81 mov rcx,[1839CB888h]
+00970C88 cmp dword ptr [rcx+0E0h],0
+00970C8F jne short 0000000180970C96h
+00970C91 call 0000000180317C30h
+00970C96 xor ecx,ecx
+00970C98 call 0000000180548F00h
+00970C9D mov rdi,rax
+00970CA0 xor r9d,r9d
+00970CA3 xor eax,eax
+00970CA5 mov r8,rdi
+00970CA8 mov [rsp+40h],rax
+00970CAD xor edx,edx
+00970CAF mov [rsp+38h],al
+00970CB3 mov rcx,rbx
+00970CB6 mov [rsp+30h],al
+00970CBA mov [rsp+28h],al
+00970CBE mov [rsp+20h],eax
+00970CC2 call 0000000180547280h
+00970CC7 test rdi,rdi
+00970CCA je 0000000180970D79h
+00970CD0 xor edx,edx
+00970CD2 mov rcx,rdi
+00970CD5 call 0000000180CADE00h ; System.Void FishNet.Serializing.PooledWriter::Store() | System.Void FishNet.Serializing.PooledWriter::Dispose()
+00970CDA jmp short 0000000180970D2Dh
+00970CDC xor edx,edx
+00970CDE mov rcx,rbx
+00970CE1 call 0000000180CCB2C0h ; FishNet.Managing.NetworkManager FishNet.Object.NetworkBehaviour::get_NetworkManager()
+00970CE6 test rax,rax
+00970CE9 jne short 0000000180970D1Bh
+00970CEB xor ecx,ecx
+00970CED call 0000000180CA58F0h ; FishNet.Managing.NetworkManager FishNet.InstanceFinder::get_NetworkManager()
+00970CF2 test rax,rax
+00970CF5 jne short 0000000180970D1Bh
+00970CF7 mov rcx,[183A09C10h]
+00970CFE cmp [rcx+0E0h],eax
+00970D04 jne short 0000000180970D0Bh
+00970D06 call 0000000180317C30h
+00970D0B mov rcx,[1839C9770h]
+00970D12 xor edx,edx
+00970D14 call 0000000182B42320h ; System.Void UnityEngine.Debug::LogWarning(System.Object)
+00970D19 jmp short 0000000180970D2Dh
+00970D1B mov rdx,[1839C9770h]
+00970D22 xor r8d,r8d
+00970D25 mov rcx,rax
+00970D28 call 0000000180CF81F0h ; System.Void FishNet.Managing.NetworkManager::LogWarning(System.String)
+00970D2D mov rax,[rbx]
+00970D30 mov rcx,rbx
+00970D33 mov rdx,[rax+2D0h]
+00970D3A mov rbx,[rsp+60h]
+00970D3F add rsp,50h
+00970D43 pop rdi
+00970D44 jmp qword ptr [rax+2C8h]
+00970D4B mov rcx,[183A09C10h]
+00970D52 cmp dword ptr [rcx+0E0h],0
+00970D59 jne short 0000000180970D60h
+00970D5B call 0000000180317C30h
+00970D60 mov rcx,[1839D7680h]
+00970D67 xor edx,edx
+00970D69 call 0000000182B42320h ; System.Void UnityEngine.Debug::LogWarning(System.Object)
+00970D6E mov rbx,[rsp+60h]
+00970D73 add rsp,50h
+00970D77 pop rdi
+00970D78 ret
+00970D79 call 0000000180317B80h

@@ -1,0 +1,132 @@
+System.Void ScheduleOne.NPCs.Schedules.NPCSignal_UseVendingMachine::RpcLogic___Purchase_2166136261()
+0096FE00 push rbx
+0096FE02 sub rsp,40h
+0096FE06 cmp byte ptr [183BFD639h],0
+0096FE0D mov rbx,rcx
+0096FE10 jne short 000000018096FE31h
+0096FE12 lea rcx,[1839EFFF8h]
+0096FE19 call 00000001803178A0h
+0096FE1E lea rcx,[1839E54E8h]
+0096FE25 call 00000001803178A0h
+0096FE2A mov byte ptr [183BFD639h],1
+0096FE31 cmp qword ptr [rbx+160h],0
+0096FE39 mov [rsp+50h],rsi
+0096FE3E mov [rsp+58h],rdi
+0096FE43 je short 000000018096FE9Fh
+0096FE45 mov rax,[1839E54E8h]
+0096FE4C mov rax,[rax+20h]
+0096FE50 test byte ptr [rax+135h],1
+0096FE57 jne short 000000018096FE61h
+0096FE59 mov rcx,rax
+0096FE5C call 000000018031C840h
+0096FE61 mov rax,[rax+0C0h]
+0096FE68 mov rax,[rax+10h]
+0096FE6C test byte ptr [rax+135h],1
+0096FE73 jne short 000000018096FE7Dh
+0096FE75 mov rcx,rax
+0096FE78 call 000000018031C840h
+0096FE7D mov rax,[rax+0B8h]
+0096FE84 mov rcx,[rax]
+0096FE87 test rcx,rcx
+0096FE8A je 0000000180970055h
+0096FE90 mov rdx,[rbx+160h]
+0096FE97 xor r8d,r8d
+0096FE9A call 0000000182B79C80h ; System.Void UnityEngine.MonoBehaviour::StopCoroutine(UnityEngine.Coroutine)
+0096FE9F mov rcx,[1839EFFF8h]
+0096FEA6 mov rdi,[rbx+158h]
+0096FEAD cmp dword ptr [rcx+0E0h],0
+0096FEB4 jne short 000000018096FEBBh
+0096FEB6 call 0000000180317C30h
+0096FEBB xor r8d,r8d
+0096FEBE xor edx,edx
+0096FEC0 mov rcx,rdi
+0096FEC3 call 0000000182B7C0A0h ; System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
+0096FEC8 test al,al
+0096FECA je short 000000018096FEECh
+0096FECC xor edx,edx
+0096FECE mov rcx,rbx
+0096FED1 call 000000018096F030h ; ScheduleOne.ObjectScripts.VendingMachine ScheduleOne.NPCs.Schedules.NPCSignal_UseVendingMachine::GetTargetMachine()
+0096FED6 lea rcx,[rbx+158h]
+0096FEDD mov [rbx+158h],rax
+0096FEE4 mov rdx,rax
+0096FEE7 call 0000000180316AB0h
+0096FEEC mov rcx,[1839EFFF8h]
+0096FEF3 mov rdi,[rbx+158h]
+0096FEFA cmp dword ptr [rcx+0E0h],0
+0096FF01 jne short 000000018096FF08h
+0096FF03 call 0000000180317C30h
+0096FF08 xor r8d,r8d
+0096FF0B xor edx,edx
+0096FF0D mov rcx,rdi
+0096FF10 call 0000000182B7C240h ; System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
+0096FF15 test al,al
+0096FF17 je short 000000018096FF8Fh
+0096FF19 mov rcx,[rbx+128h]
+0096FF20 test rcx,rcx
+0096FF23 je 0000000180970055h
+0096FF29 mov rax,[rbx+158h]
+0096FF30 test rax,rax
+0096FF33 je 0000000180970055h
+0096FF39 mov rdx,[rax+168h]
+0096FF40 test rdx,rdx
+0096FF43 je 0000000180970055h
+0096FF49 mov rdi,[rcx+170h]
+0096FF50 xor r8d,r8d
+0096FF53 lea rcx,[rsp+30h]
+0096FF58 call 0000000182B877A0h ; UnityEngine.Vector3 UnityEngine.Transform::get_forward()
+0096FF5D test rdi,rdi
+0096FF60 je 0000000180970055h
+0096FF66 movsd xmm0,[rax]
+0096FF6A lea rdx,[rsp+20h]
+0096FF6F mov eax,[rax+8]
+0096FF72 xor r9d,r9d
+0096FF75 movss xmm2,[182E5CB40h]
+0096FF7D mov rcx,rdi
+0096FF80 movsd [rsp+20h],xmm0
+0096FF86 mov [rsp+28h],eax
+0096FF8A call 00000001808F45C0h ; System.Void ScheduleOne.NPCs.NPCMovement::FaceDirection(UnityEngine.Vector3,System.Single)
+0096FF8F mov rax,[1839E54E8h]
+0096FF96 mov rax,[rax+20h]
+0096FF9A test byte ptr [rax+135h],1
+0096FFA1 jne short 000000018096FFABh
+0096FFA3 mov rcx,rax
+0096FFA6 call 000000018031C840h
+0096FFAB mov rax,[rax+0C0h]
+0096FFB2 mov rax,[rax+10h]
+0096FFB6 test byte ptr [rax+135h],1
+0096FFBD jne short 000000018096FFC7h
+0096FFBF mov rcx,rax
+0096FFC2 call 000000018031C840h
+0096FFC7 cmp byte ptr [183BFD636h],0
+0096FFCE mov rax,[rax+0B8h]
+0096FFD5 mov rsi,[rax]
+0096FFD8 jne short 000000018096FFEDh
+0096FFDA lea rcx,[1839AFC38h]
+0096FFE1 call 00000001803178A0h
+0096FFE6 mov byte ptr [183BFD636h],1
+0096FFED mov rcx,[1839AFC38h]
+0096FFF4 call 0000000180317B20h
+0096FFF9 xor edx,edx
+0096FFFB mov rcx,rax
+0096FFFE mov rdi,rax
+00970001 call 000000018043FEC0h ; System.Void URPOutlineFeature::Create() | System.Void ToolBuddy.ThirdParty.VectorGraphics.VectorUtils/<SegmentsInPath>d__75::System.IDisposable.Dispose() | System.Void ToolBuddy.ThirdParty.VectorGraphics.PathDistanceForwardIterator/BezierLoop::Clear() | System.Void FluffyUnderware.DevTools.Pool`1::setParent(T,UnityEngine.Transform) | System.Void FluffyUnderware.DevTools.Pool`1::destroy(T) | System.Void FluffyUnderware.DevTools.ComponentPool::OnSceneLoaded(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode) | System.Void FluffyUnderware.DevTools.ComponentPool::OnBeforeSerialize() | System.Void FluffyUnderware.DevTools.DTSingleton`1::MergeDoubleLoaded(FluffyUnderware.DevTools.IDTSingleton)
+00970006 lea rcx,[rdi+20h]
+0097000A mov dword ptr [rdi+10h],0
+00970011 mov rdx,rbx
+00970014 mov [rdi+20h],rbx
+00970018 call 0000000180316AB0h
+0097001D test rsi,rsi
+00970020 je short 0000000180970055h
+00970022 xor r8d,r8d
+00970025 mov rdx,rdi
+00970028 mov rcx,rsi
+0097002B call 0000000182B79810h ; UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator) | UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine_Auto(System.Collections.IEnumerator)
+00970030 lea rcx,[rbx+160h]
+00970037 mov [rbx+160h],rax
+0097003E mov rdx,rax
+00970041 mov rdi,[rsp+58h]
+00970046 mov rsi,[rsp+50h]
+0097004B add rsp,40h
+0097004F pop rbx
+00970050 jmp 0000000180316AB0h
+00970055 call 0000000180317B80h

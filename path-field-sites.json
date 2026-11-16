@@ -1,0 +1,26 @@
+[
+  {
+    "file": "EVIDENCE\\phase2\\evidence\\CheckHit_8F3620.asm.txt",
+    "line": "008F3B6D VA=00000001808F3B6D mov rcx,[rax+1B8h]"
+  },
+  {
+    "file": "EVIDENCE\\phase2\\evidence\\FixedUpdate_8F49E0.asm.txt",
+    "line": "008F4CB5 VA=00000001808F4CB5 mov rdi,[rbx+1B8h]"
+  },
+  {
+    "file": "EVIDENCE\\phase2\\evidence\\SetDestination_8F8110.asm.txt",
+    "line": "008F8708 VA=00000001808F8708 mov rsi,[rdi+1B8h]"
+  },
+  {
+    "file": "EVIDENCE\\phase2\\evidence\\UpdateCache_8F99B0.asm.txt",
+    "line": "008F9A20 VA=00000001808F9A20 mov rbx,[rcx+1B8h]"
+  },
+  {
+    "file": "EVIDENCE\\phase2\\evidence\\_ctor_8FAE60.asm.txt",
+    "line": "008FB09B VA=00000001808FB09B lea rcx,[rdi+1B8h]"
+  },
+  {
+    "file": "EVIDENCE\\phase2\\evidence\\_ctor_8FAE60.asm.txt",
+    "line": "008FB0A2 VA=00000001808FB0A2 mov [rdi+1B8h],rsi"
+  }
+]

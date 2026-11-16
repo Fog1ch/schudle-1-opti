@@ -1,0 +1,71 @@
+System.Void ScheduleOne.NPCs.Schedules.NPCSignal_UseATM::Purchase()
+0096E840 push rbx
+0096E842 sub rsp,50h
+0096E846 cmp byte ptr [183BFD62Bh],0
+0096E84D mov rbx,rcx
+0096E850 jne short 000000018096E87Dh
+0096E852 lea rcx,[183A09C10h]
+0096E859 call 00000001803178A0h
+0096E85E lea rcx,[1839CB888h]
+0096E865 call 00000001803178A0h
+0096E86A lea rcx,[1839C9770h]
+0096E871 call 00000001803178A0h
+0096E876 mov byte ptr [183BFD62Bh],1
+0096E87D xor edx,edx
+0096E87F mov [rsp+60h],rdi
+0096E884 mov rcx,rbx
+0096E887 call 0000000180CCB150h ; System.Boolean FishNet.Object.NetworkBehaviour::get_IsServerInitialized()
+0096E88C test al,al
+0096E88E je short 000000018096E8E7h
+0096E890 mov rcx,[1839CB888h]
+0096E897 cmp dword ptr [rcx+0E0h],0
+0096E89E jne short 000000018096E8A5h
+0096E8A0 call 0000000180317C30h
+0096E8A5 xor ecx,ecx
+0096E8A7 call 0000000180548F00h
+0096E8AC mov rdi,rax
+0096E8AF xor r9d,r9d
+0096E8B2 xor eax,eax
+0096E8B4 mov r8,rdi
+0096E8B7 mov [rsp+40h],rax
+0096E8BC xor edx,edx
+0096E8BE mov [rsp+38h],al
+0096E8C2 mov rcx,rbx
+0096E8C5 mov [rsp+30h],al
+0096E8C9 mov [rsp+28h],al
+0096E8CD mov [rsp+20h],eax
+0096E8D1 call 0000000180547280h
+0096E8D6 test rdi,rdi
+0096E8D9 je short 000000018096E94Ch
+0096E8DB xor edx,edx
+0096E8DD mov rcx,rdi
+0096E8E0 call 0000000180CADE00h ; System.Void FishNet.Serializing.PooledWriter::Store() | System.Void FishNet.Serializing.PooledWriter::Dispose()
+0096E8E5 jmp short 000000018096E938h
+0096E8E7 xor edx,edx
+0096E8E9 mov rcx,rbx
+0096E8EC call 0000000180CCB2C0h ; FishNet.Managing.NetworkManager FishNet.Object.NetworkBehaviour::get_NetworkManager()
+0096E8F1 test rax,rax
+0096E8F4 jne short 000000018096E926h
+0096E8F6 xor ecx,ecx
+0096E8F8 call 0000000180CA58F0h ; FishNet.Managing.NetworkManager FishNet.InstanceFinder::get_NetworkManager()
+0096E8FD test rax,rax
+0096E900 jne short 000000018096E926h
+0096E902 mov rcx,[183A09C10h]
+0096E909 cmp [rcx+0E0h],eax
+0096E90F jne short 000000018096E916h
+0096E911 call 0000000180317C30h
+0096E916 mov rcx,[1839C9770h]
+0096E91D xor edx,edx
+0096E91F call 0000000182B42320h ; System.Void UnityEngine.Debug::LogWarning(System.Object)
+0096E924 jmp short 000000018096E938h
+0096E926 mov rdx,[1839C9770h]
+0096E92D xor r8d,r8d
+0096E930 mov rcx,rax
+0096E933 call 0000000180CF81F0h ; System.Void FishNet.Managing.NetworkManager::LogWarning(System.String)
+0096E938 xor edx,edx
+0096E93A mov rcx,rbx
+0096E93D mov rdi,[rsp+60h]
+0096E942 add rsp,50h
+0096E946 pop rbx
+0096E947 jmp 000000018096E970h ; System.Void ScheduleOne.NPCs.Schedules.NPCSignal_UseATM::RpcLogic___Purchase_2166136261()
+0096E94C call 0000000180317B80h

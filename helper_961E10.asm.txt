@@ -1,0 +1,4 @@
+System.Void ScheduleOne.NPCs.Behaviour.MoveToAndActBehaviour::RpcLogic___StartAct_328543758(FishNet.Connection.NetworkConnection)
+00961E10 mov rax,[rcx]
+00961E13 mov rdx,[rax+3A0h]
+00961E1A jmp qword ptr [rax+398h]
